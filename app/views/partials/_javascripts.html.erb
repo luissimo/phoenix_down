@@ -2,6 +2,7 @@
 <script src="js/lib/tether/tether.min.js"></script>
 <script src="js/lib/bootstrap/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
+<script src="js/lib/select2/select2.full.min.js"></script>
 
 <script src="js/lib/ion-range-slider/ion.rangeSlider.js"></script>
 <script src="js/lib/ion-range-slider/init.js"></script>
@@ -95,7 +96,9 @@
       }, 1000);
     });
   });
+</script>
 
+<script>
 $(document).ready(function(){
 $("#range-slider-1").ionRangeSlider({
 min: 0,
@@ -109,6 +112,12 @@ hide_min_max: true,
 hide_from_to: true
 });
 
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("input[name='demo3']").TouchSpin();
+  });
 </script>
 
 <script src="js/app.js"></script>
