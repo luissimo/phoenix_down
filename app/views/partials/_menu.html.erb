@@ -4,17 +4,16 @@
   <ul class="side-menu-list">
     <li class="grey with-sub">
               <span>
-                  <i class="font-icon font-icon-dashboard"></i>
+                  <i class="font-icon font-icon-speed"></i>
                   <span class="lbl"> Boosting </span>
               </span>
       <ul>
-        <li><a href="index.html"><span class="lbl">Division boost</span><span class="label label-custom label-pill label-info">Popular</span></a></li>
-        <li><a href="side-menu-compact-full.html"><span class="lbl">Wins boost</span></a></li>
-        <li><a href="dashboard-addl-menu.html"><span class="lbl">Duo Queue</span></a></li>
-        <li><a href="side-menu-avatar.html"><span class="lbl">Placement Matches</span></a></li>
-        <li><a href="side-menu-avatar.html"><span class="lbl">Normal draft</span></a></li>
-        <li><a href="dark-menu.html"><span class="lbl">LP Boost</span></a></li>
-        <li><a href="dark-menu-blue.html"><span class="lbl">Budget boosting</span></a></li>
+        <li><%= link_to division_boost_path do %> <span class="lbl">Division boost</span> <% end %></li>
+        <li><%= link_to win_boost_path do %><span class="lbl">Wins boost</span><% end %></li>
+        <li><%= link_to duo_queue_path do %><span class="lbl">Duo Queue</span><% end %></li>
+        <li><%= link_to placement_matches_path do %><span class="lbl">Placement Matches</span><% end %></li>
+        <li><%= link_to normal_draft_path do %><span class="lbl">Normal draft</span><% end %></li>
+        <li><%= link_to budget_boosting_path do %><span class="lbl">Budget boost</span><% end %></li>
       </ul>
     </li>
 
@@ -28,66 +27,15 @@
     <li class="pink-red">
 
       <%= link_to faqs_path do %>
-        <i class="font-icon font-icon-zigzag"></i>
+        <i class="font-icon font-icon-question"></i>
         <span class="lbl">FAQ</span>
       <% end %>
     </li>
 
     <li class="pink-red">
-      <a href="activity.html">
-        <i class="font-icon font-icon-zigzag"></i>
+      <%= link_to contact_path do %>
+        <i class="font-icon font-icon-mail"></i>
         <span class="lbl">Contact</span>
-      </a>
+      <% end %>
     </li>
-
-    <li class="pink-red">
-      <a href="activity.html">
-        <i class="font-icon font-icon-zigzag"></i>
-        <span class="lbl">Activity</span>
-      </a>
-    </li>
-
-    <li class="pink-red">
-      <a href="activity.html">
-        <i class="font-icon font-icon-zigzag"></i>
-        <span class="lbl">Activity</span>
-      </a>
-    </li>
-
-
-    <section>
-      <header class="side-menu-title">Tags</header>
-      <ul class="side-menu-list">
-        <li>
-          <a href="#">
-            <i class="tag-color green"></i>
-            <span class="lbl">League of Legends</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="tag-color grey-blue"></i>
-            <span class="lbl">Boosting</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="tag-color red"></i>
-            <span class="lbl">TOA</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="tag-color pink"></i>
-            <span class="lbl">Safe Payments</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="tag-color orange"></i>
-            <span class="lbl">FAQ</span>
-          </a>
-        </li>
-      </ul>
-    </section>
 </nav><!--.side-menu-->
