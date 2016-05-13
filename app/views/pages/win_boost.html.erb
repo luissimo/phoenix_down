@@ -1,11 +1,12 @@
-<div class="row">
+<%= provide(:title, 'Win Boost') %>
+
   <div class="container">
     <div class="col-md-7">
       <section class="card box-typical-full-height">
         <div class="card-block">
           <div class="row">
           <h5 class="with-border m-t-0">Win boost</h5>
-          <div class="col-md-3"
+          <div class="col-md-6"
                 <div class="form-group">
                   <label>Choose your current division</label>
                   <select class="select2">
@@ -52,9 +53,9 @@
                     </optgroup>
                   </select>
                   </div>
-
+            <div class="form-group">
             <label>Choose your current LP</label>
-            <div class="col-md-3"
+            <div class="col-md-6">
             <select class="select2">
               <option data-photo="img/photo-64-1.jpg">0-20 LP</option>
               <option data-photo="img/photo-64-1.jpg">21-40 LP</option>
@@ -69,17 +70,17 @@
             </div>     <!-- end card block -->
             <br/>
             <br/>
-           <div class="row">
-          <div class=form-group>
-            <div class="col-md-3">
-            <label>How many wins would you like?</label>
+
+            <div class="col-md-8">
+              <div class="form-group">
+            <label> How many wins would you like?</label>
             <input type="text" id="demo3" value="" name="demo3">
-              </div>
+            </div>
           </div>
 
-          </div>
+
       </section
     </div>
   </div>
   <%= render 'shared/payments' %>
-</div>
+

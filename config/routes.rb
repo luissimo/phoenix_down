@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root                          'pages#index'
   get 'boosting'            =>  'pages#boosting'
   get 'boosters'            =>  'pages#boosters'

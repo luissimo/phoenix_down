@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title><%= yield :title %></title>
+  <title><%= full_title(yield(:title)) %></title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -27,6 +27,9 @@
 
 </head>
 <body class="with-side-menu theme-rebecca-purple">
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
 
 <%= render 'partials/header' %>
 <%= render 'partials/menu' %>
