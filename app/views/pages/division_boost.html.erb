@@ -8,7 +8,7 @@
     <div class="col-md-5">
       <div class="row">
         <div class="form-group float-left">
-        <label>Choose your current division</label>
+        <label class="label label-success">Choose your current division</label>
           <%= image_tag('bronze_5.png', size: '180x180') %>
         <select class="select2">
           <optgroup label="Bronze division">
@@ -54,8 +54,10 @@
           </optgroup>
         </select>
         </div> <!-- end form group -->
+
         <div class="float-left">
-        <label>Choose your current League Points</label>
+        <label class="label label-success">Choose your current LP: </label>
+          <br/><br/>
         <select class="select2">
           <option data-photo="img/photo-64-1.jpg">0-20 LP</option>
           <option data-photo="img/photo-64-1.jpg">21-40 LP</option>
@@ -65,15 +67,13 @@
         </select>
       </div>
         </div>
-      <br/>
-      <br/>
     </div>
 
     <div class="row">
       <div class="form-group">
       <div class="col-md-5 float-right">
         <div class="row">
-        <label>Choose your desired division</label>
+        <label class="label label-success">Choose your desired division</label>
         <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
         <select class="select2">
           <optgroup label="Challenger division">
@@ -118,8 +118,6 @@
             <option data-photo="img/photo-64-1.jpg">Bronze V</option>
           </optgroup>
         </select>
-        <br/>
-        <br/>
         </div>
       </div>
      </div>

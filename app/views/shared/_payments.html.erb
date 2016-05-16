@@ -2,13 +2,28 @@
   <div class="col-md-4">
     <section class="card box-typical" >
       <div class="card-block">
-        <h5 class="with-border m-t-0">Your order:</h5>
-        <div class="col-md-3">
+        <div class="col-smd-5">
+        <h4 class="with-border m-t-0">Your order:</h4>
+          <ul>
+            <li class="product"><em></em></li>
+            <li>
+              <strong>
+                Total cost: <span id="cost_eur">€0.00 </span> (<span id="cost_usd" class="small">$0.00</span>)
+              </strong>
+            </li>
+          </ul>
+          <hr>
           <div class="row">
-
+           <button type="submit" class="btn btn-primary btn-purchase center-block" id="purchase">
+            <i class="fa fa-paypal icon-white"> Confirm & Pay</i>
+           </button>
+            <hr>
+            <div class="text-center">
+              <%= image_tag('moneyback.png', size: '250x100' ) %><br/><br/>
+              <%= image_tag('paypal_badges.png', size: '260x30' ) %><br/>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
   </div>
