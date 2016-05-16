@@ -5,10 +5,11 @@
 <section class="card box-typical">
   <div class="card-block">
     <h5 class="with-border m-t-0">Division boost</h5>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <div class="row">
-        <div class="form-group">
+        <div class="form-group float-left">
         <label>Choose your current division</label>
+          <%= image_tag('bronze_5.png', size: '180x180') %>
         <select class="select2">
           <optgroup label="Bronze division">
             <option data-photo="img/photo-64-1.jpg">Bronze V</option>
@@ -53,6 +54,7 @@
           </optgroup>
         </select>
         </div> <!-- end form group -->
+        <div class="float-left">
         <label>Choose your current League Points</label>
         <select class="select2">
           <option data-photo="img/photo-64-1.jpg">0-20 LP</option>
@@ -62,14 +64,17 @@
           <option data-photo="img/photo-64-1.jpg">81-100 LP</option>
         </select>
       </div>
+        </div>
       <br/>
       <br/>
     </div>
 
     <div class="row">
       <div class="form-group">
-      <div class="col-md-6">
+      <div class="col-md-5 float-right">
+        <div class="row">
         <label>Choose your desired division</label>
+        <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
         <select class="select2">
           <optgroup label="Challenger division">
             <option data-photo="img/photo-64-1.jpg">Challenger</option>
@@ -115,6 +120,7 @@
         </select>
         <br/>
         <br/>
+        </div>
       </div>
      </div>
   </div>

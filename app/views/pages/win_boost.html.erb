@@ -9,6 +9,7 @@
           <div class="col-md-6"
                 <div class="form-group">
                   <label>Choose your current division</label>
+                  <%= image_tag('bronze_5.png', size: '180x180') %>
                   <select class="select2">
                     <optgroup label="Bronze division">
                       <option data-photo="img/photo-64-1.jpg">Bronze V</option>
@@ -77,10 +78,14 @@
             <input type="text" id="demo3" value="" name="demo3">
             </div>
           </div>
-
-
       </section
     </div>
   </div>
   <%= render 'shared/payments' %>
+
+<script>
+  $(document).ready(function(){
+    $("input[name='demo3']").TouchSpin();
+  });
+</script>
 

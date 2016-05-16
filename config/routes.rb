@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get 'normal_draft'        =>  'pages#normal_draft'
   get 'budget_boosting'     =>  'pages#budget_boosting'
 
+# https://intense-harbor-93889.herokuapp.com/ | https://git.heroku.com/intense-harbor-93889.git
+
 end
