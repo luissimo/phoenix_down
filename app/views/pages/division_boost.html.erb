@@ -10,47 +10,47 @@
         <div class="form-group float-left">
         <label class="label label-success">Choose your current division</label>
           <%= image_tag('bronze_5.png', size: '180x180') %>
-        <select class="select2">
+        <select class="select2" id="current_division">
           <optgroup label="Bronze division">
-            <option data-photo="img/photo-64-1.jpg">Bronze V</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze IV</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze III</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze II</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze I</option>
+            <option value="-376">Bronze V</option>
+            <option value="-359">Bronze IV</option>
+            <option value="-342">Bronze III</option>
+            <option value="-325">Bronze II</option>
+            <option value="-306">Bronze I</option>
           </optgroup>
           <optgroup label="Silver division">
-            <option data-photo="img/photo-64-1.jpg">Silver V</option>
-            <option data-photo="img/photo-64-1.jpg">Silver IV</option>
-            <option data-photo="img/photo-64-1.jpg">Silver III</option>
-            <option data-photo="img/photo-64-1.jpg">Silver II</option>
-            <option data-photo="img/photo-64-1.jpg">Silver I</option>
+            <option value="-287">Silver V</option>
+            <option value="-267">Silver IV</option>
+            <option value="-246">Silver III</option>
+            <option value="-225">Silver II</option>
+            <option value="-204">Silver I</option>
           </optgroup>
           <optgroup label="Gold division">
-            <option data-photo="img/photo-64-1.jpg">Gold V</option>
-            <option data-photo="img/photo-64-1.jpg">Gold IV</option>
-            <option data-photo="img/photo-64-1.jpg">Gold III</option>
-            <option data-photo="img/photo-64-1.jpg">Gold II</option>
-            <option data-photo="img/photo-64-1.jpg">Gold I</option>
+            <option value="-174">Gold V</option>
+            <option value="-140">Gold IV</option>
+            <option value="-102">Gold III</option>
+            <option value="-61">Gold II</option>
+            <option value="-17">Gold I</option>
           </optgroup>
           <optgroup label="Platinum division">
-            <option data-photo="img/photo-64-1.jpg">Platinum V</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum IV</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum III</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum II</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum I</option>
+            <option value="29">Platinum V</option>
+            <option value="79">Platinum IV</option>
+            <option value="135">Platinum III</option>
+            <option value="195">Platinum II</option>
+            <option value="260">Platinum I</option>
           </optgroup>
           <optgroup label="Diamond division">
-            <option data-photo="img/photo-64-1.jpg">Diamond V</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond IV</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond III</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond II</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond I</option>
+            <option value="330">Diamond V</option>
+            <option value="475">Diamond IV</option>
+            <option value="625">Diamond III</option>
+            <option value="800">Diamond II</option>
+            <option value="1000">Diamond I</option>
           </optgroup>
           <optgroup label="Master division">
-            <option data-photo="img/photo-64-1.jpg">Master</option>
+            <option value="1500">Master</option>
           </optgroup>
           <optgroup label="Challenger division">
-            <option data-photo="img/photo-64-1.jpg">Challenger</option>
+            <option value="3623">Challenger</option>
           </optgroup>
         </select>
         </div> <!-- end form group -->
@@ -75,47 +75,47 @@
         <div class="row">
         <label class="label label-success">Choose your desired division</label>
         <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
-        <select class="select2">
+        <select class="select2" id="desired_division" onkeyup="this.value = minmax(15, 5000)" onchange="divCalculate(this.value)">
           <optgroup label="Challenger division">
-            <option data-photo="img/photo-64-1.jpg">Challenger</option>
+            <option value="3623">Challenger</option>
           </optgroup>
           <optgroup label="Master division">
-            <option data-photo="img/photo-64-1.jpg">Master</option>
+            <option value="1500">Master</option>
           </optgroup>
           <optgroup label="Diamond division">
-            <option data-photo="img/photo-64-1.jpg">Diamond I</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond II</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond III</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond IV</option>
-            <option data-photo="img/photo-64-1.jpg">Diamond V</option>
+            <option value="1000">Diamond I</option>
+            <option value="800">Diamond II</option>
+            <option value="625">Diamond III</option>
+            <option value="475">Diamond IV</option>
+            <option value="330">Diamond V</option>
           </optgroup>
           <optgroup label="Platinum division">
-            <option data-photo="img/photo-64-1.jpg">Platinum I</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum II</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum III</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum IV</option>
-            <option data-photo="img/photo-64-1.jpg">Platinum V</option>
+            <option value="260">Platinum I</option>
+            <option value="195">Platinum II</option>
+            <option value="135">Platinum III</option>
+            <option value="79">Platinum IV</option>
+            <option value="29">Platinum V</option>
           </optgroup>
           <optgroup label="Gold division">
-            <option data-photo="img/photo-64-1.jpg">Gold I</option>
-            <option data-photo="img/photo-64-1.jpg">Gold II</option>
-            <option data-photo="img/photo-64-1.jpg">Gold III</option>
-            <option data-photo="img/photo-64-1.jpg">Gold IV</option>
-            <option data-photo="img/photo-64-1.jpg">Gold V</option>
+            <option value="-17">Gold I</option>
+            <option value="-61">Gold II</option>
+            <option value="-102">Gold III</option>
+            <option value="-140">Gold IV</option>
+            <option value="-174">Gold V</option>
           </optgroup>
           <optgroup label="Silver division">
-            <option data-photo="img/photo-64-1.jpg">Silver I</option>
-            <option data-photo="img/photo-64-1.jpg">Silver II</option>
-            <option data-photo="img/photo-64-1.jpg">Silver III</option>
-            <option data-photo="img/photo-64-1.jpg">Silver IV</option>
-            <option data-photo="img/photo-64-1.jpg">Silver V</option>
+            <option value="-204">Silver I</option>
+            <option value="-225">Silver II</option>
+            <option value="-246">Silver III</option>
+            <option value="-267">Silver IV</option>
+            <option value="-287">Silver V</option>
           </optgroup>
           <optgroup label="Bronze division">
-            <option data-photo="img/photo-64-1.jpg">Bronze I</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze II</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze III</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze IV</option>
-            <option data-photo="img/photo-64-1.jpg">Bronze V</option>
+            <option value="-306">Bronze I</option>
+            <option value="-325">Bronze II</option>
+            <option value="-342">Bronze III</option>
+            <option value="-359">Bronze IV</option>
+            <option value="-376">Bronze V</option>
           </optgroup>
         </select>
         </div>
@@ -129,3 +129,21 @@
 <%= render 'shared/payments' %>
 
 </div>
+
+<script>
+function divCalculate(desired_division) {
+  var current_division = $('select[id=current_division]').val();
+  cost_eur.innerHTML = "€" + ((desired_division) - (current_division)).toFixed(2);
+  cost_usd.innerHTML = "$" + ((desired_division) - (current_division) * 1.13 ).toFixed(2);
+}
+function minmax(min, max)
+{
+  var value = cost_eur.innerHTML;
+  if(parseInt(value) < min || isNaN(value))
+    return 15;
+  else if(parseInt(value) > max)
+    return 4999;
+  else return value;
+}
+</script>
+

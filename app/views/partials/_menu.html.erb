@@ -2,19 +2,25 @@
 <div class="mobile-menu-left-overlay"></div>
 <nav class="side-menu">
   <ul class="side-menu-list">
-    <li class="grey with-sub">
-              <span>
-                  <i class="font-icon font-icon-speed"></i>
-                  <span class="lbl"> Boosting </span>
-              </span>
-      <ul>
-        <li><%= link_to division_boost_path do %> <span class="lbl">Division boost</span> <% end %></li>
-        <li><%= link_to win_boost_path do %><span class="lbl">Wins boost</span><% end %></li>
-        <li><%= link_to duo_queue_path do %><span class="lbl">Duo Queue</span><% end %></li>
-        <li><%= link_to placement_matches_path do %><span class="lbl">Placement Matches</span><% end %></li>
-        <li><%= link_to normal_draft_path do %><span class="lbl">Normal draft</span><% end %></li>
-        <li><%= link_to budget_boosting_path do %><span class="lbl">Budget boost</span><% end %></li>
-      </ul>
+    <li class="gold">
+      <%= link_to division_boost_path do %>
+          <i class="font-icon font-icon-speed"></i>
+          <span class="lbl">Division boost</span>
+      <% end %>
+    </li>
+
+    <li class="grey">
+      <%= link_to win_boost_path do %>
+          <i class="font-icon glyphicon glyphicon-tint"></i>
+          <span class="lbl">Win boost</span>
+      <% end %>
+    </li>
+
+    <li class="grey">
+      <%= link_to budget_boosting_path do %>
+          <i class="font-icon font-icon-speed"></i>
+          <span class="lbl">Budget boost</span>
+      <% end %>
     </li>
 
     <li class="red">

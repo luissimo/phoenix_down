@@ -2,7 +2,7 @@
 
   <div class="container">
     <div class="col-md-7">
-      <section class="card box-typical-full-height">
+      <section class="card box-typical">
         <div class="card-block">
           <div class="row">
           <h5 class="with-border m-t-0">Win boost</h5>
@@ -10,47 +10,47 @@
                 <div class="form-group">
                   <label class="label label-success">Choose your current division</label>
                   <%= image_tag('bronze_5.png', size: '180x180') %>
-                  <select class="select2" id="current_division">
+                  <select class="select2" id="current_division" onchange="winCalculate().reload()">
                     <optgroup label="Bronze division">
-                      <option data-photo="img/photo-64-1.jpg" value="4" >Bronze V</option>
-                      <option data-photo="img/photo-64-1.jpg" value="4">Bronze IV</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.9">Bronze III</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.9">Bronze II</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.9">Bronze I</option>
+                      <option value="4.1" >Bronze V</option>
+                      <option value="4">Bronze IV</option>
+                      <option value="3.9">Bronze III</option>
+                      <option value="3.8">Bronze II</option>
+                      <option value="3.75">Bronze I</option>
                     </optgroup>
                     <optgroup label="Silver division">
-                      <option data-photo="img/photo-64-1.jpg" value="3.7">Silver V</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.7">Silver IV</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.7">Silver III</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.5">Silver II</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.5">Silver I</option>
+                      <option value="3.7">Silver V</option>
+                      <option value="3.65">Silver IV</option>
+                      <option value="3.6">Silver III</option>
+                      <option value="3.5">Silver II</option>
+                      <option value="3.5">Silver I</option>
                     </optgroup>
                     <optgroup label="Gold division">
-                      <option data-photo="img/photo-64-1.jpg" value="3.5">Gold V</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.3">Gold IV</option>
-                      <option data-photo="img/photo-64-1.jpg" value="3.1">Gold III</option>
-                      <option data-photo="img/photo-64-1.jpg" value="2.9">Gold II</option>
-                      <option data-photo="img/photo-64-1.jpg" value="2.7">Gold I</option>
+                      <option value="3.5">Gold V</option>
+                      <option value="3.3">Gold IV</option>
+                      <option value="3.1">Gold III</option>
+                      <option value="2.9">Gold II</option>
+                      <option value="2.7">Gold I</option>
                     </optgroup>
                     <optgroup label="Platinum division">
-                      <option data-photo="img/photo-64-1.jpg" value="2.5">Platinum V</option>
-                      <option data-photo="img/photo-64-1.jpg" value="2.3">Platinum IV</option>
-                      <option data-photo="img/photo-64-1.jpg" value="2.1">Platinum III</option>
-                      <option data-photo="img/photo-64-1.jpg" value="1.9">Platinum II</option>
-                      <option data-photo="img/photo-64-1.jpg" value="1.7">Platinum I</option>
+                      <option value="2.5">Platinum V</option>
+                      <option value="2.3">Platinum IV</option>
+                      <option value="2.1">Platinum III</option>
+                      <option value="1.9">Platinum II</option>
+                      <option value="1.7">Platinum I</option>
                     </optgroup>
                     <optgroup label="Diamond division">
-                      <option data-photo="img/photo-64-1.jpg">Diamond V</option>
-                      <option data-photo="img/photo-64-1.jpg" value="1.5">Diamond IV</option>
-                      <option data-photo="img/photo-64-1.jpg" value="1.3">Diamond III</option>
-                      <option data-photo="img/photo-64-1.jpg" value="1.1">Diamond II</option>
-                      <option data-photo="img/photo-64-1.jpg" value="0.9">Diamond I</option>
+                      <option value="1.6">Diamond V</option>
+                      <option value="1.5">Diamond IV</option>
+                      <option value="1.3">Diamond III</option>
+                      <option value="1.1">Diamond II</option>
+                      <option value="0.9">Diamond I</option>
                     </optgroup>
                     <optgroup label="Master division">
-                      <option data-photo="img/photo-64-1.jpg" value="0.7">Master</option>
+                      <option value="0.7">Master</option>
                     </optgroup>
                     <optgroup label="Challenger division">
-                      <option data-photo="img/photo-64-1.jpg" value="0.5">Challenger</option>
+                      <option value="0.5">Challenger</option>
                     </optgroup>
                   </select>
                 </div>
@@ -61,26 +61,14 @@
                   <div class="col-md-8 text-center"><br/><br/>
                   <h1 id="amount_of_wins" > 0 </h1><br/><br/>
                   </div>
-                <input type="text" id="demo3" value="1" min="1" max="100" step="1" name="demo3" onchange="winCalculate(this.value)">
-              </div>
+                <div class="col-md-12">
+                <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
+                       id="demo3" value="1" min="1" max="9" maxlength="1" step="1" name="demo3" oninput="winCalculate(this.value)" onchange="winCalculate(this.value)">
+                </div>
+                </div>
             </div>
-          <br/>
-
        </div>   <!-- end row -->
       </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label class="label label-success">Choose your current LP</label>
-            <br/><br/>
-            <select class="select2" id="current_lp">
-              <option data-photo="img/photo-64-1.jpg">0-20 LP</option>
-              <option data-photo="img/photo-64-1.jpg">21-40 LP</option>
-              <option data-photo="img/photo-64-1.jpg">41-60 LP</option>
-              <option data-photo="img/photo-64-1.jpg">61-80 LP</option>
-              <option data-photo="img/photo-64-1.jpg">81-100 LP</option>
-            </select>
-          </div>
-        </div>
      </section
     </div>
   </div>
@@ -94,10 +82,14 @@
 
 <script>
   function winCalculate(wins) {
-    var division = $('select[id=current_division]').val();
-    cost_eur.innerHTML = "€"+((wins * 16) / division  ).toFixed(2);
-    cost_usd.innerHTML = "$"+((wins * 16) / division * 1.13  ).toFixed(2);
-    amount_of_wins.innerHTML = (wins);
+    var division_value = $('select[id=current_division]').val();
+    var division_text = $("#current_division option:selected").html();
+    cost_eur.innerHTML = "€"+((wins * 16) / division_value  ).toFixed(2);
+    cost_usd.innerHTML = "$"+((wins * 16) / division_value * 1.13  ).toFixed(2);
+    amount_of_wins.innerHTML = wins;
+    product1.innerHTML = "<strong class='bg-info'>Current rank</strong> " + division_text;
+    product2.innerHTML = "<strong class='bg-info'>wins</strong> " + wins  ;
   }
 </script>
+
 
