@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0a19f567-0414-4378-b2a7-c65835486f3b" name="eloboost.io" url="http://192.81.220.162">
+      <webServer id="0a19f567-0414-4378-b2a7-c65835486f3b" name="test.visitekaartjesrotterdam.nl" url="http://192.81.220.162">
         <fileTransfer host="192.81.220.162" port="22" rootFolder="/home/rails" accessType="SFTP" password="df98df92dfcfdfc1dffadfe5dff8dfe6dfd3dfe0" username="rails">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />

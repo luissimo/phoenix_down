@@ -54,18 +54,6 @@
           </optgroup>
         </select>
         </div> <!-- end form group -->
-
-        <div class="float-left">
-        <label class="label label-success">Choose your current LP: </label>
-          <br/><br/>
-        <select class="select2">
-          <option data-photo="img/photo-64-1.jpg">0-20 LP</option>
-          <option data-photo="img/photo-64-1.jpg">21-40 LP</option>
-          <option data-photo="img/photo-64-1.jpg">41-60 LP</option>
-          <option data-photo="img/photo-64-1.jpg">61-80 LP</option>
-          <option data-photo="img/photo-64-1.jpg">81-100 LP</option>
-        </select>
-      </div>
         </div>
     </div>
 
@@ -75,7 +63,7 @@
         <div class="row">
         <label class="label label-success">Choose your desired division</label>
         <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
-        <select class="select2" id="desired_division" onkeyup="this.value = minmax(15, 5000)" onchange="divCalculate(this.value)">
+        <select class="select2" id="desired_division" onkeyup="this.value = minmax(15, 5000)" onchange="divCalculate(this.value)" autofocus>
           <optgroup label="Challenger division">
             <option value="3623">Challenger</option>
           </optgroup>
