@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   get 'boosters'            =>  'pages#boosters'
   get 'faqs'                =>  'pages#faq'
   get 'contact'             =>  'pages#contact'
-  get 'elo_boost'           =>  'pages#elo_boost'
-  get 'division_boost'      =>  'pages#division_boost'
-  get 'win_boost'           =>  'pages#win_boost'
-  get 'duo_queue'           =>  'pages#duo_queue'
-  get 'placement_matches'   =>  'pages#placement_matches'
-  get 'normal_draft'        =>  'pages#normal_draft'
-  get 'budget_boosting'     =>  'pages#budget_boosting'
+  get 'elo-boost'           =>  'pages#elo_boost'
+  get 'division-boost'      =>  'pages#division_boost'
+  get 'win-boost'           =>  'pages#win_boost'
+  get 'duo-queue'           =>  'pages#duo_queue'
+  get 'placement-matches'   =>  'pages#placement_matches'
+  get 'normal-draft'        =>  'pages#normal_draft'
+  get 'budget-boosting'     =>  'pages#budget_boosting'
 
 # https://intense-harbor-93889.herokuapp.com/ | https://git.heroku.com/intense-harbor-93889.git
 

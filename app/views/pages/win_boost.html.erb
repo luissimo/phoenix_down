@@ -86,8 +86,8 @@
   function winCalculate(wins) {
     var division_value = $('select[id=current_division]').val();
     var division_text = $("#current_division option:selected").html();
-    cost_eur.innerHTML = "€"+((wins * 16) / division_value  ).toFixed(2);
-    cost_usd.innerHTML = "$"+((wins * 16) / division_value * 1.13  ).toFixed(2);
+    cost_eur.innerHTML = "€"+((wins * 16) / division_value).toFixed(2);
+    cost_usd.innerHTML = "$"+((wins * 16) / division_value * 1.13 ).toFixed(2);
     amount_of_wins.innerHTML = wins;
     product1.innerHTML = "<strong class='bg-info'>Current rank</strong> " + division_text;
     product2.innerHTML = "<strong class='bg-info'>wins</strong> " + wins  ;
