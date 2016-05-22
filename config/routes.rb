@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'boosters'            =>  'pages#boosters'
   get 'faqs'                =>  'pages#faq'
   get 'contact'             =>  'pages#contact'
+  get 'elo_boost'           =>  'pages#elo_boost'
   get 'division_boost'      =>  'pages#division_boost'
   get 'win_boost'           =>  'pages#win_boost'
   get 'duo_queue'           =>  'pages#duo_queue'

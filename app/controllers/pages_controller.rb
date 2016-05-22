@@ -4,6 +4,9 @@ class PagesController < ApplicationController
   def index
   end
 
+  def elo_boost
+  end
+
   def division_boost
   end
 

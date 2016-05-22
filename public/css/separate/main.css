@@ -23633,6 +23633,10 @@ html {
   background-color: #46c35f;
   background-image: url('../img/statistic-box-green.png');
 }
+.statistic-box.blue {
+  background-color: #00aaed;
+  background-image: url('../img/statistic-box-riven.jpg');
+}
 .statistic-box > div {
   -webkit-border-radius: inherit;
           border-radius: inherit;
