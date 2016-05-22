@@ -5,11 +5,17 @@
         <div class="col-smd-5">
         <h4 class="with-border m-t-0">Your order:</h4>
           <ul>
+            <li><strong class="bg-info"><%= full_title(yield(:title)) %></strong></li>
+            <li>
+              <strong class="small">
+                <span id="budget_eur"></span> <span id="budget_usd" class="small"></span>
+              </strong>
+            </li>
             <li id="product1"></li>
             <li id="product2"></li>
-            <li>
+            <li><br/>
               <strong>
-                Total cost: <span id="cost_eur">€0.00 </span> (<span id="cost_usd" class="small">$0.00</span>)
+                Total cost: <span id="cost_eur">€0.00 </span> <span id="cost_usd" class="small">$0.00</span>
               </strong>
             </li>
           </ul>

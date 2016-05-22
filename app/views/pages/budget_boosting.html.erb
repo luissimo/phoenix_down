@@ -35,6 +35,8 @@
     budget = parseFloat(budget_amount);
     cost_eur.innerHTML = "€"+(budget).toFixed(2);
     cost_usd.innerHTML = "$"+(budget * 1.13 ).toFixed(2);
+    budget_eur.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> €" + (budget).toFixed(2);
+    budget_usd.innerHTML = "($" + (budget * 1.13 ).toFixed(2) + ")";
     return budget;
   }
 </script>
