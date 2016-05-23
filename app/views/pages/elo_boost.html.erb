@@ -6,160 +6,155 @@
       <section class="card box-typical">
         <div class="card-block">
           <h5 class="with-border">Elo Boost</h5>
-          <div class="col-md-12 center-block">
+           <div class="col-md-12 center-block">
             <div class="row">
-                <section class="tabs-section">
-                  <div class="tabs-section-nav tabs-section-nav-icons">
-                    <div class="tbl">
-                      <ul class="nav" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#tabs-1-tab-1" data-toggle="tab">
+              <section class="tabs-section">
+                <div class="tabs-section-nav">
+                  <div class="tbl">
+                    <ul class="nav" role="tablist" id="payment_tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#tabs-2-tab-1" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
-										<i class="font-icon font-icon-cogwheel"></i>
 										Division boost
 									</span>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#tabs-1-tab-2" data-toggle="tab">
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tabs-2-tab-2" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
-										<span class="font-icon font-icon-cogwheel"></span>
 										Win boost
 									</span>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#tabs-1-tab-3" data-toggle="tab">
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tabs-2-tab-3" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
-										<i class="font-icon font-icon-cogwheel"></i>
 										Budget boost
 									</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!--.tabs-section-nav-->
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div><!--.tabs-section-nav-->
 
-                  <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="tabs-1-tab-1">
-                      <section class="card box-typical">
-                        <div class="card-block">
-                          <h5 class="with-border m-t-0">Division boost</h5>
-                          <div class="col-md-5">
-                            <div class="row">
-                              <div class="form-group float-left">
-                                <label class="label label-success">Choose your current division</label>
-                                <%= image_tag('bronze_5.png', size: '180x180') %>
-                                <select class="select2" id="current_division">
-                                  <optgroup label="Bronze division">
-                                    <option value="-376">Bronze V</option>
-                                    <option value="-359">Bronze IV</option>
-                                    <option value="-342">Bronze III</option>
-                                    <option value="-325">Bronze II</option>
-                                    <option value="-306">Bronze I</option>
-                                  </optgroup>
-                                  <optgroup label="Silver division">
-                                    <option value="-287">Silver V</option>
-                                    <option value="-267">Silver IV</option>
-                                    <option value="-246">Silver III</option>
-                                    <option value="-225">Silver II</option>
-                                    <option value="-204">Silver I</option>
-                                  </optgroup>
-                                  <optgroup label="Gold division">
-                                    <option value="-174">Gold V</option>
-                                    <option value="-140">Gold IV</option>
-                                    <option value="-102">Gold III</option>
-                                    <option value="-61">Gold II</option>
-                                    <option value="-17">Gold I</option>
-                                  </optgroup>
-                                  <optgroup label="Platinum division">
-                                    <option value="29">Platinum V</option>
-                                    <option value="79">Platinum IV</option>
-                                    <option value="135">Platinum III</option>
-                                    <option value="195">Platinum II</option>
-                                    <option value="260">Platinum I</option>
-                                  </optgroup>
-                                  <optgroup label="Diamond division">
-                                    <option value="330">Diamond V</option>
-                                    <option value="475">Diamond IV</option>
-                                    <option value="625">Diamond III</option>
-                                    <option value="800">Diamond II</option>
-                                    <option value="1000">Diamond I</option>
-                                  </optgroup>
-                                  <optgroup label="Master division">
-                                    <option value="1500">Master</option>
-                                  </optgroup>
-                                  <optgroup label="Challenger division">
-                                    <option value="3623">Challenger</option>
-                                  </optgroup>
-                                </select>
-                              </div> <!-- end form group -->
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="form-group">
-                              <div class="col-md-5 float-right">
-                                <div class="row">
-                                  <label class="label label-success">Choose your desired division</label>
-                                  <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
-                                  <select class="select2" id="desired_division" onkeyup="this.value = minmax(15, 5000)" onchange="divCalculate(this.value)" autofocus>
-                                    <optgroup label="Challenger division">
-                                      <option value="3623">Challenger</option>
-                                    </optgroup>
-                                    <optgroup label="Master division">
-                                      <option value="1500">Master</option>
-                                    </optgroup>
-                                    <optgroup label="Diamond division">
-                                      <option value="1000">Diamond I</option>
-                                      <option value="800">Diamond II</option>
-                                      <option value="625">Diamond III</option>
-                                      <option value="475">Diamond IV</option>
-                                      <option value="330">Diamond V</option>
-                                    </optgroup>
-                                    <optgroup label="Platinum division">
-                                      <option value="260">Platinum I</option>
-                                      <option value="195">Platinum II</option>
-                                      <option value="135">Platinum III</option>
-                                      <option value="79">Platinum IV</option>
-                                      <option value="29">Platinum V</option>
-                                    </optgroup>
-                                    <optgroup label="Gold division">
-                                      <option value="-17">Gold I</option>
-                                      <option value="-61">Gold II</option>
-                                      <option value="-102">Gold III</option>
-                                      <option value="-140">Gold IV</option>
-                                      <option value="-174">Gold V</option>
-                                    </optgroup>
-                                    <optgroup label="Silver division">
-                                      <option value="-204">Silver I</option>
-                                      <option value="-225">Silver II</option>
-                                      <option value="-246">Silver III</option>
-                                      <option value="-267">Silver IV</option>
-                                      <option value="-287">Silver V</option>
-                                    </optgroup>
-                                    <optgroup label="Bronze division">
-                                      <option value="-306">Bronze I</option>
-                                      <option value="-325">Bronze II</option>
-                                      <option value="-342">Bronze III</option>
-                                      <option value="-359">Bronze IV</option>
-                                      <option value="-376">Bronze V</option>
-                                    </optgroup>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </section
-                    </div><!--.tab-pane-->
-                    <div role="tabpanel" class="tab-pane fade" id="tabs-1-tab-2">
-                      <h5 class="with-border">Win boost</h5>
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="tabs-2-tab-1">
+                    <h5 class="with-border m-t-0">Division boost</h5>
+                    <div class="col-md-5">
                       <div class="row">
-                        <div class="col-md-6"
+                        <div class="form-group float-left">
+                          <label class="label label-success">Choose your current division</label>
+                          <%= image_tag('bronze_5.png', size: '180x180') %>
+                          <select class="select2" id="current_division_div">
+                            <optgroup label="Bronze division">
+                              <option value="0">Bronze V</option>
+                              <option value="10">Bronze IV</option>
+                              <option value="15">Bronze III</option>
+                              <option value="15.2">Bronze II</option>
+                              <option value="15.2">Bronze I</option>
+                            </optgroup>
+                            <optgroup label="Silver division">
+                              <option value="15.2">Silver V</option>
+                              <option value="19.95">Silver IV</option>
+                              <option value="20.9">Silver III</option>
+                              <option value="20.9">Silver II</option>
+                              <option value="20.9">Silver I</option>
+                            </optgroup>
+                            <optgroup label="Gold division">
+                              <option value="24.7">Gold V</option>
+                              <option value="25.65">Gold IV</option>
+                              <option value="26.60">Gold III</option>
+                              <option value="27.55">Gold II</option>
+                              <option value="29.45">Gold I</option>
+                            </optgroup>
+                            <optgroup label="Platinum division">
+                              <option value="35.15">Platinum V</option>
+                              <option value="38">Platinum IV</option>
+                              <option value="42.75">Platinum III</option>
+                              <option value="59.85">Platinum II</option>
+                              <option value="59.85">Platinum I</option>
+                            </optgroup>
+                            <optgroup label="Diamond division">
+                              <option value="76">Diamond V</option>
+                              <option value="95">Diamond IV</option>
+                              <option value="114">Diamond III</option>
+                              <option value="133">Diamond II</option>
+                              <option value="190">Diamond I</option>
+                            </optgroup>
+                            <optgroup label="Master division">
+                              <option value="500">Master</option>
+                            </optgroup>
+                            <optgroup label="Challenger division">
+                              <option value="3623">Challenger</option>
+                            </optgroup>
+                          </select>
+                        </div> <!-- end form group -->
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group">
+                        <div class="col-md-5 float-right">
+                          <div class="row">
+                            <label class="label label-success">Choose your desired division</label>
+                            <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
+                            <select class="select2" id="desired_division_div" onkeyup="this.value = minmax(15, 5000)" onchange="divCalculate(this.value)" autofocus>
+                              <optgroup label="Challenger division">
+                                <option value="4999">Challenger</option>
+                              </optgroup>
+                              <optgroup label="Master division">
+                                <option value="1630.8">Master</option>
+                              </optgroup>
+                              <optgroup label="Diamond division">
+                                <option value="1130.8">Diamond I</option>
+                                <option value="940.8">Diamond II</option>
+                                <option value="807.8">Diamond III</option>
+                                <option value="693.8">Diamond IV</option>
+                                <option value="598.8">Diamond V</option>
+                              </optgroup>
+                              <optgroup label="Platinum division">
+                                <option value="522.8">Platinum I</option>
+                                <option value="462.95">Platinum II</option>
+                                <option value="403.1">Platinum III</option>
+                                <option value="360.35">Platinum IV</option>
+                                <option value="322.35">Platinum V</option>
+                              </optgroup>
+                              <optgroup label="Gold division">
+                                <option value="287.2">Gold I</option>
+                                <option value="257.75">Gold II</option>
+                                <option value="230.2">Gold III</option>
+                                <option value="203.6">Gold IV</option>
+                                <option value="177.95">Gold V</option>
+                              </optgroup>
+                              <optgroup label="Silver division">
+                                <option value="153.25">Silver I</option>
+                                <option value="132.35">Silver II</option>
+                                <option value="111.45">Silver III</option>
+                                <option value="90.55">Silver IV</option>
+                                <option value="70.6">Silver V</option>
+                              </optgroup>
+                              <optgroup label="Bronze division">
+                                <option value="55.4">Bronze I</option>
+                                <option value="40.2">Bronze II</option>
+                                <option value="25">Bronze III</option>
+                                <option value="10">Bronze IV</option>
+                                <option value="0">Bronze V</option>
+                              </optgroup>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!--.tab-pane-->
+
+                  <div role="tabpanel" class="tab-pane fade" id="tabs-2-tab-2">
+                    <h5 class="with-border">Win boost</h5>
+                    <div class="row">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="label label-success">Choose your current division</label>
                           <%= image_tag('bronze_5.png', size: '180x180') %>
-                          <select class="select2" id="current_division" onchange="winCalculate().reload()" >
+                          <select class="select2" id="current_division_win" onchange="winCalculate().reload()" >
                             <optgroup label="Bronze division">
                               <option value="4.1" >Bronze V</option>
                               <option value="4">Bronze IV</option>
@@ -203,35 +198,52 @@
                             </optgroup>
                           </select>
                         </div>
+                      </div>
 
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="label label-success"> How many wins would you like?</label><br/><br/>
-                            <div class="col-md-8 text-center"><br/><br/>
-                              <h1 id="amount_of_wins" > 0 </h1><br/><br/>
-                            </div>
-                            <div class="col-md-12">
-                              <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
-                                     id="demo3" value="1" min="1" max="9" maxlength="1" step="1" name="demo3" oninput="winCalculate(this.value)" onchange="winCalculate(this.value)">
-                            </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="label label-success"> How many wins would you like?</label><br/><br/>
+                          <div class="col-md-8 text-center"><br/><br/>
+                            <h1 id="amount_of_wins" > 0 </h1><br/><br/>
+                          </div>
+                          <div class="col-md-12">
+                            <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
+                                   id="demo3" value="1" min="1" max="9" maxlength="1" step="1" name="demo3" oninput="winCalculate(this.value)" onchange="winCalculate(this.value)">
                           </div>
                         </div>
-                      </div>   <!-- end row -->
-                    </div><!--.tab-pane-->
-                    <div role="tabpanel" class="tab-pane fade" id="tabs-1-tab-3">
-                      <div class="form-group text-center">
-                        <label class="label label-success">Choose your budget</label><br/><br/>
-                        <div class="input-group-addon">€</div>
-                        <input type="number" min="10" maxlength="7" step="10"
-                               class="form-control" id="input-budget" placeholder="Amount" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
-                               onchange="budCalculate(this.value)">
-                        <div class="input-group-addon">.00</div>
-                      </div> <!-- end form group -->
-                    </div><!--.tab-pane-->
-                  </div><!--.tab-content-->
-                </section><!--.tabs-section-->
+                      </div>
+                    </div>   <!-- end row -->
+                  </div><!--.tab-pane-->
+                  <div role="tabpanel" class="tab-pane fade" id="tabs-2-tab-3">
+                    <div class="container">
+                      <div class="col-md-12">
+                        <section class="card box-typical">
+                          <div class="card-block">
+                            <h5 class="with-border">Budget boost</h5>
+                            <div class="col-md-12 center-block">
+                              <div class="row">
+                                <div class="form-group text-center">
+                                  <label class="label label-success">Choose your budget</label><br/><br/>
+                                  <div class="input-group-addon">€</div>
+                                  <input type="number" min="10" maxlength="7" step="10"
+                                         class="form-control" id="input-budget" placeholder="Amount" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
+                                         onchange="budCalculate(this.value)">
+                                  <div class="input-group-addon">.00</div>
+                                </div> <!-- end form group -->
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="row"></div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div><!--.tab-pane-->
+                </div><!--.tab-content-->
+              </section><!--.tabs-section-->
             </div>
-          </div>
+           </div>
           <div class="row">
             <div class="row"></div>
           </div>
@@ -239,53 +251,49 @@
       </section
     </div>
   </div>
+
+
   <%= render 'shared/payments' %>
+
 </div>
 
+
 <script>
-  $(function() {
-    $( "#elotabs" ).tabs();
+  $(document).ready(function(){
+    $("input[name='demo3']").TouchSpin();
   });
 </script>
 <script>
   function winCalculate(wins) {
-    var division_value = $('select[id=current_division]').val();
-    var division_text = $("#current_division option:selected").html();
-    cost_eur.innerHTML = "€"+((wins * 16) / division_value  ).toFixed(2);
-    cost_usd.innerHTML = "$"+((wins * 16) / division_value * 1.13  ).toFixed(2);
+    var division_value = $('select[id=current_division_win]').val();
+    var division_text = $("#current_division_win option:selected").html();
+    cost_eur.innerHTML = "€"+(wins * division_value).toFixed(2);
+    cost_usd.innerHTML = "$"+((wins * division_value) * 1.13 ).toFixed(2);
     amount_of_wins.innerHTML = wins;
+    product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Win boost";
     product1.innerHTML = "<strong class='bg-info'>Current rank</strong> " + division_text;
     product2.innerHTML = "<strong class='bg-info'>wins</strong> " + wins  ;
   }
-</script>
-<script>
-  function divCalculate(desired_division) {
-    var current_division = $('select[id=current_division]').val();
-    cost_eur.innerHTML = "€" + ((desired_division) - (current_division)).toFixed(2);
-    cost_usd.innerHTML = "$" + ((desired_division) - (current_division) * 1.13 ).toFixed(2);
-  }
-  function minmax(min, max)
-  {
-    var value = cost_eur.innerHTML;
-    if(parseInt(value) < min || isNaN(value))
-      return 15;
-    else if(parseInt(value) > max)
-      return 4999;
-    else return value;
-  }
-</script>
-<script>
   function budCalculate(budget_amount) {
     var budget = 0;
     console.log(typeof budget_amount);
     budget = parseFloat(budget_amount);
     cost_eur.innerHTML = "€"+(budget).toFixed(2);
     cost_usd.innerHTML = "$"+(budget * 1.13 ).toFixed(2);
+    product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Budget boost";
+    product1.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> €" + (budget).toFixed(2);
+    product2.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> $" + (budget * 1.13).toFixed(2);
     return budget;
   }
-</script>
-<script>
-  $(document).ready(function(){
-    $("input[name='demo3']").TouchSpin();
-  });
+
+  function divCalculate(desired_division) {
+    var current_division = $('select[id=current_division_div]').val();
+    var current_division_text = $("#current_division_div option:selected").text();
+    var desired_division_text = $("#desired_division_div option:selected").text();
+    cost_eur.innerHTML = "€" + (desired_division - current_division).toFixed(2);
+    cost_usd.innerHTML = "$" + (desired_division - current_division * 1.13 ).toFixed(2);
+    product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Division boost";
+    product1.innerHTML = "<strong class='bg-info'>Current division</strong> " + current_division_text;
+    product2.innerHTML = "<strong class='bg-info'>Desired division</strong> " + desired_division_text;
+  }
 </script>

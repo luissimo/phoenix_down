@@ -1,10 +1,12 @@
 class PagesController < ApplicationController
   before_action :authenticate_user!, only:  [:boosters]
 
+
   def index
   end
 
   def elo_boost
+
   end
 
   def division_boost

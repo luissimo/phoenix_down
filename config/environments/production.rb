@@ -1,6 +1,6 @@
 Rails.application.configure do
     ## host for production devise
-    ## config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+   ## config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
