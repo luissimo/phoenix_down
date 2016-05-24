@@ -49,43 +49,43 @@
                             <optgroup label="Bronze division">
                               <option value="0">Bronze V</option>
                               <option value="10">Bronze IV</option>
-                              <option value="15">Bronze III</option>
-                              <option value="15.2">Bronze II</option>
-                              <option value="15.2">Bronze I</option>
+                              <option value="25">Bronze III</option>
+                              <option value="40.2">Bronze II</option>
+                              <option value="55.4">Bronze I</option>
                             </optgroup>
                             <optgroup label="Silver division">
-                              <option value="15.2">Silver V</option>
-                              <option value="19.95">Silver IV</option>
-                              <option value="20.9">Silver III</option>
-                              <option value="20.9">Silver II</option>
-                              <option value="20.9">Silver I</option>
+                              <option value="70.6">Silver V</option>
+                              <option value="90.55">Silver IV</option>
+                              <option value="111.45">Silver III</option>
+                              <option value="132.35">Silver II</option>
+                              <option value="153.25">Silver I</option>
                             </optgroup>
                             <optgroup label="Gold division">
-                              <option value="24.7">Gold V</option>
-                              <option value="25.65">Gold IV</option>
-                              <option value="26.60">Gold III</option>
-                              <option value="27.55">Gold II</option>
-                              <option value="29.45">Gold I</option>
+                              <option value="177.95">Gold V</option>
+                              <option value="203.6">Gold IV</option>
+                              <option value="230.2">Gold III</option>
+                              <option value="257.75">Gold II</option>
+                              <option value="287.2">Gold I</option>
                             </optgroup>
                             <optgroup label="Platinum division">
-                              <option value="35.15">Platinum V</option>
-                              <option value="38">Platinum IV</option>
-                              <option value="42.75">Platinum III</option>
-                              <option value="59.85">Platinum II</option>
-                              <option value="59.85">Platinum I</option>
+                              <option value="322.35">Platinum V</option>
+                              <option value="360.35">Platinum IV</option>
+                              <option value="403.1">Platinum III</option>
+                              <option value="462.95">Platinum II</option>
+                              <option value="522.8">Platinum I</option>
                             </optgroup>
                             <optgroup label="Diamond division">
-                              <option value="76">Diamond V</option>
-                              <option value="95">Diamond IV</option>
-                              <option value="114">Diamond III</option>
-                              <option value="133">Diamond II</option>
-                              <option value="190">Diamond I</option>
+                              <option value="598.8">Diamond V</option>
+                              <option value="693.8">Diamond IV</option>
+                              <option value="807.8">Diamond III</option>
+                              <option value="940.8">Diamond II</option>
+                              <option value="1130.8">Diamond I</option>
                             </optgroup>
                             <optgroup label="Master division">
-                              <option value="500">Master</option>
+                              <option value="1630.8">Master</option>
                             </optgroup>
                             <optgroup label="Challenger division">
-                              <option value="3623">Challenger</option>
+                              <option value="4999">Challenger</option>
                             </optgroup>
                           </select>
                         </div> <!-- end form group -->
@@ -290,10 +290,23 @@
     var current_division = $('select[id=current_division_div]').val();
     var current_division_text = $("#current_division_div option:selected").text();
     var desired_division_text = $("#desired_division_div option:selected").text();
-    cost_eur.innerHTML = "€" + (desired_division - current_division).toFixed(2);
-    cost_usd.innerHTML = "$" + (desired_division - current_division * 1.13 ).toFixed(2);
+    cost_eur.innerHTML = "€" + calculateTotalAmt(desired_division,'euro');
+    cost_usd.innerHTML = "$" + calculateTotalAmt(desired_division,'usd');
     product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Division boost";
     product1.innerHTML = "<strong class='bg-info'>Current division</strong> " + current_division_text;
     product2.innerHTML = "<strong class='bg-info'>Desired division</strong> " + desired_division_text;
+  }
+
+  function calculateTotalAmt(desired_division, currencyType) {
+    var totalAmt;
+    var current_division = $('select[id=current_division_div]').val();
+    if(currencyType == 'euro') {
+      totalAmt = (desired_division - current_division).toFixed(2);
+    } else if(currencyType == 'usd') {
+      totalAmt = ((desired_division - current_division) * 1.13 ).toFixed(2);
+    }
+    if(totalAmt != undefined && totalAmt < 10)
+      totalAmt = 0;
+    return totalAmt;
   }
 </script>
