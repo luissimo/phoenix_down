@@ -8,19 +8,19 @@
           <h5 class="with-border">Elo Boost</h5>
            <div class="col-md-12 center-block">
             <div class="row">
-              <section class="tabs-section">
+              <section class="tabs-section" width="100%">
                 <div class="tabs-section-nav">
                   <div class="tbl">
                     <ul class="nav" role="tablist" id="payment_tabs">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#tabs-2-tab-1" role="tab" data-toggle="tab">
+                        <a class="nav-link active" href="#tabs-2-tab-1" aria-controls="tabs-2-tab-1" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
 										Division boost
 									</span>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#tabs-2-tab-2" role="tab" data-toggle="tab">
+                        <a class="nav-link" href="#tabs-2-tab-2" aria-controls="tabs-2-tab-2" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
 										Win boost
 									</span>
@@ -98,7 +98,7 @@
                           <div class="row">
                             <label class="label label-success">Choose your desired division</label>
                             <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
-                            <select class="select2" id="desired_division_div" onkeyup="this.value = minmax(15, 5000)" onchange="divCalculate(this.value)" autofocus>
+                            <select class="select2" id="desired_division_div" onchange="divCalculate(this.value)" autofocus>
                               <optgroup label="Challenger division">
                                 <option value="4999">Challenger</option>
                               </optgroup>
@@ -257,6 +257,202 @@
 
 </div>
 
+                            <!-- ######## DIVISION BOOST INFO ######## -->
+
+<div class="division-boost-info">
+ <section class="widget">
+  <header class="widget-header-dark"> DIVISION ELO BOOST </header>
+  <div class="tab-content widget-tabs-content">
+    <div class="tab-pane active" id="w-1-tab-1" role="tabpanel">
+      <div>
+        <center>
+        <ul>
+          <li><b>1.</b> You choose your current division and the division you want to achieve with the Division Elo Boost</li>
+          <li><b>2.</b> If you agree with your elo boost order, you can click on ‘confirm & pay’. You will be redirected to PayPal to complete the payment.</li>
+          <li><b>3.</b> If you don’t have an account, you will be redirected to create an account. If you are logged in, you will be redirected to a confirmation page.</li>
+          <li><b>4.</b> We will give you further instructions after the previous steps are completed.</li>
+        </ul>
+        <br/>
+
+        <p><em> Note that you can only apply for division elo boost if you get at least 12 league points per game.
+          If you get less than 12 points per game, your division elo boost will be converted to ‘win elo boost’.
+        </em></p>
+        </center>
+      </div>
+    </div>
+    <div class="tab-pane" id="w-1-tab-2" role="tabpanel">
+      <center>Division elo boost is a method LOL boosting. There are several alternatives on LOL elo boosting. One of these alternatives is division Elo boosting.
+        This LOL boosting method allows summoner’s to be boosted to the divison they want.</center>
+    </div>
+    <div class="tab-pane" id="w-1-tab-3" role="tabpanel">
+      <center><b>Choosing for LOL divison elo boost has several benefits:</b>
+        <ul>
+        <li>• Division elo boost guarantees that you will get to the division you want.</li>
+        <li>• Division elo boost gives the best price per division and is thus the most cost-efficient lol elo boosting method.</li>
+        <li>• Fastest elo boost method as divisions can be skipped due to good results</li>
+        </ul>
+      </center>
+    </div>
+    <div class="tab-pane" id="w-1-tab-4" role="tabpanel">
+      <center>
+        <div class="row">
+        <div class="">
+          <ul>
+            <li title="DIVISON ELO BOOST IN LOL NA SERVER">NA</li>
+            <li title="DIVISON ELO BOOST IN LOL EUW SERVER">EUW</li>
+            <li title="DIVISON ELO BOOST IN LOL EUNE SERVER">EUNE</li>
+            <li title="DIVISON ELO BOOST IN LOL LAN SERVER">LAN</li>
+            <li title="DIVISON ELO BOOST IN LOL LAS SERVER">LAS</li>
+            <li title="DIVISON ELO BOOST IN LOL BR SERVER">BR</li>
+          </ul>
+        </div>
+        <div class="">
+          <ul>
+            <li title="DIVISON ELO BOOST IN LOL TR SERVER">TR</li>
+            <li title="DIVISON ELO BOOST IN LOL RU SERVER">RU</li>
+            <li title="DIVISON ELO BOOST IN LOL OCE SERVER">OCE</li>
+            <li title="DIVISON ELO BOOST IN LOL CN SERVER">CN</li>
+            <li title="DIVISON ELO BOOST IN LOL JP SERVER">JP</li>
+            <li title="DIVISON ELO BOOST IN LOL KR SERVER">KR</li>
+          </ul>
+        </div>
+        </div>
+      </center>
+    </div>
+  </div>
+  <div class="widget-tabs-nav colored">
+    <ul class="tbl-row" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link green active" data-toggle="tab" href="#w-1-tab-1" role="tab">
+          <i class="font-icon font-icon-chart-3"></i>
+          How does Division Elo Boost work?
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link blue" data-toggle="tab" href="#w-1-tab-2" role="tab">
+          <i class="font-icon font-icon-notebook-lines"></i>
+          What is Division Elo Boost?
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link orange" data-toggle="tab" href="#w-1-tab-3" role="tab">
+          <i class="font-icon font-icon-pin"></i>
+          Benefits of Division Elo Boost
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link red" data-toggle="tab" href="#w-1-tab-4" role="tab">
+          <i class="font-icon font-icon-pin"></i>
+          Division ELO boost servers
+        </a>
+      </li>
+    </ul>
+  </div>
+ </section><!--.widget-->
+</div>
+
+                            <!--- ############# WIN BOOST INFO ############# -->
+
+<div class="win-boost-info">
+<section class="widget">
+  <header class="widget-header-dark"> WIN ELO BOOST </header>
+  <div class="tab-content widget-tabs-content">
+    <div class="tab-pane active" id="w-2-tab-1" role="tabpanel">
+      <div>
+        <center>
+          <ul>
+            <li><b>1.</b> You choose your current division to apply for the win elo boost.</li>
+            <li><b>2.</b> You select the amount of net Wins you want to be boosted.</li>
+            <li><b>3.</b> If you agree with your elo boost order, you can click on ‘confirm & pay’. You will be redirected to PayPal to complete the payment. </li>
+            <li><b>4.</b> If you don’t have an account, you will be redirected to create an account. If you are logged in, you will be redirected to a confirmation page.</li>
+            <li><b>5.</b> We will give you further instructions after the previous steps are completed. </li>
+          </ul>
+          <br/>
+
+          <p><em> Win Elo Boost works with net Wins. This means that whenever our professional booster loses a game, you will receive 1 extra win.
+            For example: When the booster loses 2 games, you will get 12 wins in total to compensate for the losses.
+            In the end you will receive exactly the amount of net wins you have ordered.
+          </em></p>
+        </center>
+      </div>
+    </div>
+    <div class="tab-pane" id="w-2-tab-2" role="tabpanel">
+      <center>
+        Win elo boost is a LOL boosting method. There are several alternatives for LOL elo boosting.
+        One of these alternatives is per win elo boost. This LOL boosting method allows summoner’s to get an exact amount of wins.
+        When you apply for win elo boost, you will get NET WINS. So you will be compensated for every loss.
+      </center>
+    </div>
+    <div class="tab-pane" id="w-2-tab-3" role="tabpanel">
+      <center><b>
+        Choosing for LOL win elo boost has several benefits:</b>
+        <ul>
+          <li>• Win elo boost gives you Net wins.
+                Meaning that you get compensated for every game loss by the booster.</li>
+          <li>• Win elo boost is the best and most cost-efficient method for winning a small amount of games.
+                For example when you need to win your promo series.</li>
+          <li>• Because of the compensation, win elo boost gives the best Win/lose ratio.</li>
+          <li>• Skipping a division does not affect your win elo boost order. We will continue to win the amount you have ordered.</li>
+        </ul>
+      </center>
+    </div>
+    <div class="tab-pane" id="w-2-tab-4" role="tabpanel">
+      <center>
+          <div class="">
+            <ul>
+              <li title="WIN ELO BOOST IN LOL NA SERVER">NA</li>
+              <li title="WIN ELO BOOST IN LOL EUW SERVER">EUW</li>
+              <li title="WIN ELO BOOST IN LOL EUNE SERVER">EUNE</li>
+              <li title="WIN ELO BOOST IN LOL LAN SERVER">LAN</li>
+              <li title="WIN ELO BOOST IN LOL LAS SERVER">LAS</li>
+              <li title="WIN ELO BOOST IN LOL BR SERVER">BR</li>
+              </ul>
+          </div>
+          <div class="">
+            <ul>
+              <li title="WIN ELO BOOST IN LOL TR SERVER">TR</li>
+              <li title="WIN ELO BOOST IN LOL RU SERVER">RU</li>
+              <li title="WIN ELO BOOST IN LOL OCE SERVER">OCE</li>
+              <li title="WIN ELO BOOST IN LOL CN SERVER">CN</li>
+              <li title="WIN ELO BOOST IN LOL JP SERVER">JP</li>
+              <li title="WIN ELO BOOST IN LOL KR SERVER">KR</li>
+            </ul>
+          </div>
+      </center>
+    </div>
+  </div>
+  <div class="widget-tabs-nav colored">
+    <ul class="tbl-row" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link green active" data-toggle="tab" href="#w-2-tab-1" role="tab">
+          <i class="font-icon font-icon-chart-3"></i>
+          How does Win Elo Boost work?
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link blue" data-toggle="tab" href="#w-2-tab-2" role="tab">
+          <i class="font-icon font-icon-notebook-lines"></i>
+          What is Win Elo Boost?
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link orange" data-toggle="tab" href="#w-2-tab-3" role="tab">
+          <i class="font-icon font-icon-pin"></i>
+          Benefits of Win Elo Boost
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link red" data-toggle="tab" href="#w-2-tab-4" role="tab">
+          <i class="font-icon font-icon-pin"></i>
+          Win ELO boost servers
+        </a>
+      </li>
+    </ul>
+  </div>
+ </section><!--.widget-->
+</div>
+
+
 
 <script>
   $(document).ready(function(){
@@ -309,4 +505,18 @@
       totalAmt = 0;
     return totalAmt;
   }
+</script>
+
+<script>
+  $('.win-boost-info]').hide();
+
+  $('a[data-toggle="tab"][href="#tabs-2-tab-1"]').on('shown.bs.tab', function (e) {
+    $('.win-boost-info]').hide();
+    $('.division-boost-info]').show();
+  });
+
+    $('a[data-toggle="tab"][href="#tabs-2-tab-2"]').on('shown.bs.tab', function (e) {
+      $('.division-boost-info]').hide();
+      $('.win-boost-info]').show();
+    })
 </script>
