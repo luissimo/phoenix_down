@@ -1,6 +1,20 @@
 $(document).ready(function(){
 
 
+
+	$('.win-boost-info').hide();
+
+	$('a[data-toggle="tab"][href="#tabs-2-tab-1"]').on('shown.bs.tab', function (e) {
+		$('.win-boost-info').hide();
+		$('.division-boost-info').show();
+	});
+
+	$('a[data-toggle="tab"][href="#tabs-2-tab-2"]').on('shown.bs.tab', function (e) {
+		$('.division-boost-info').hide();
+		$('.win-boost-info').show();
+	});
+
+
 /* ==========================================================================
 	Scroll
 	========================================================================== */

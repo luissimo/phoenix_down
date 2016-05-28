@@ -13,14 +13,14 @@
                   <div class="tbl">
                     <ul class="nav" role="tablist" id="payment_tabs">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#tabs-2-tab-1" aria-controls="tabs-2-tab-1" role="tab" data-toggle="tab">
+                        <a class="nav-link active" href="#tabs-2-tab-1" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
 										Division boost
 									</span>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#tabs-2-tab-2" aria-controls="tabs-2-tab-2" role="tab" data-toggle="tab">
+                        <a class="nav-link" href="#tabs-2-tab-2" role="tab" data-toggle="tab">
 									<span class="nav-link-in">
 										Win boost
 									</span>
@@ -354,7 +354,7 @@
                             <!--- ############# WIN BOOST INFO ############# -->
 
 <div class="win-boost-info">
-<section class="widget">
+ <section class="widget">
   <header class="widget-header-dark"> WIN ELO BOOST </header>
   <div class="tab-content widget-tabs-content">
     <div class="tab-pane active" id="w-2-tab-1" role="tabpanel">
@@ -507,16 +507,3 @@
   }
 </script>
 
-<script>
-  $('.win-boost-info]').hide();
-
-  $('a[data-toggle="tab"][href="#tabs-2-tab-1"]').on('shown.bs.tab', function (e) {
-    $('.win-boost-info]').hide();
-    $('.division-boost-info]').show();
-  });
-
-    $('a[data-toggle="tab"][href="#tabs-2-tab-2"]').on('shown.bs.tab', function (e) {
-      $('.division-boost-info]').hide();
-      $('.win-boost-info]').show();
-    })
-</script>
