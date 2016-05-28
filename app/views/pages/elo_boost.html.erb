@@ -26,13 +26,6 @@
 									</span>
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#tabs-2-tab-3" role="tab" data-toggle="tab">
-									<span class="nav-link-in">
-										Budget boost
-									</span>
-                        </a>
-                      </li>
                     </ul>
                   </div>
                 </div><!--.tabs-section-nav-->
@@ -44,48 +37,48 @@
                       <div class="row">
                         <div class="form-group float-left">
                           <label class="label label-success">Choose your current division</label>
-                          <%= image_tag('bronze_iv.png', size: '180x180', id: 'div_image_change') %>
-                          <select class="select2" id="current_division_div" onchange="getElementByID('div_image_change').src = colorUrlMap[this.name];">
+                          <img src="/img/bronze_v.png" id="div_image_change" height="180" width="180">
+                          <select class="select2" id="current_division_div" onchange="divCalculate(document.getElementById('desired_division_div').value); document.getElementById('div_image_change').src = divUrlMap[this.value];">
                             <optgroup label="Bronze division">
-                              <option value="0" name="bronze_v">Bronze V</option>
-                              <option value="10" name="bronze_iv">Bronze IV</option>
-                              <option value="25" name="bronze_iii">Bronze III</option>
-                              <option value="40.2" name="bronze_ii">Bronze II</option>
-                              <option value="55.4" name="bronze_i">Bronze I</option>
+                              <option value="0">Bronze V</option>
+                              <option value="10">Bronze IV</option>
+                              <option value="25">Bronze III</option>
+                              <option value="40.2" >Bronze II</option>
+                              <option value="55.4">Bronze I</option>
                             </optgroup>
                             <optgroup label="Silver division">
-                              <option value="70.6" name="silver_v">Silver V</option>
-                              <option value="90.55" name="silver_iv">Silver IV</option>
-                              <option value="111.45" name="silver_iii">Silver III</option>
-                              <option value="132.35" name="silver_ii">Silver II</option>
-                              <option value="153.25" name="silver_i">Silver I</option>
+                              <option value="70.6">Silver V</option>
+                              <option value="90.55">Silver IV</option>
+                              <option value="111.45">Silver III</option>
+                              <option value="132.35">Silver II</option>
+                              <option value="153.25">Silver I</option>
                             </optgroup>
                             <optgroup label="Gold division">
-                              <option value="177.95" name="gold_v">Gold V</option>
-                              <option value="203.6" name="gold_iv">Gold IV</option>
-                              <option value="230.2" name="gold_iii">Gold III</option>
-                              <option value="257.75" name="gold_ii">Gold II</option>
-                              <option value="287.2" name="gold_i">Gold I</option>
+                              <option value="177.95">Gold V</option>
+                              <option value="203.6">Gold IV</option>
+                              <option value="230.2">Gold III</option>
+                              <option value="257.75">Gold II</option>
+                              <option value="287.2">Gold I</option>
                             </optgroup>
                             <optgroup label="Platinum division">
-                              <option value="322.35" name="platinum_v">Platinum V</option>
-                              <option value="360.35" name="platinum_iv">Platinum IV</option>
-                              <option value="403.1" name="platinum_iii">Platinum III</option>
-                              <option value="462.95" name="platinum_ii">Platinum II</option>
-                              <option value="522.8" name="platinum_i">Platinum I</option>
+                              <option value="322.35">Platinum V</option>
+                              <option value="360.35">Platinum IV</option>
+                              <option value="403.1">Platinum III</option>
+                              <option value="462.95">Platinum II</option>
+                              <option value="522.8" >Platinum I</option>
                             </optgroup>
                             <optgroup label="Diamond division">
-                              <option value="598.8" name="diamond_v">Diamond V</option>
-                              <option value="693.8" name="diamond_iv">Diamond IV</option>
-                              <option value="807.8" name="diamond_iii">Diamond III</option>
-                              <option value="940.8" name="diamond_ii">Diamond II</option>
-                              <option value="1130.8" name="diamond_i">Diamond I</option>
+                              <option value="598.8">Diamond V</option>
+                              <option value="693.8">Diamond IV</option>
+                              <option value="807.8">Diamond III</option>
+                              <option value="940.8">Diamond II</option>
+                              <option value="1130.8">Diamond I</option>
                             </optgroup>
                             <optgroup label="Master division">
-                              <option value="1630.8" name="master">Master</option>
+                              <option value="1630.8">Master</option>
                             </optgroup>
                             <optgroup label="Challenger division">
-                              <option value="4999" name="challenger">Challenger</option>
+                              <option value="4999">Challenger</option>
                             </optgroup>
                           </select>
                         </div> <!-- end form group -->
@@ -97,8 +90,8 @@
                         <div class="col-md-5 float-right">
                           <div class="row">
                             <label class="label label-success">Choose your desired division</label>
-                            <%= image_tag('platinum_2.png', size: '180x180', class: 'float-left') %>
-                            <select class="select2" id="desired_division_div" onchange="divCalculate(this.value)" autofocus>
+                            <img src="/img/challenger.png" id="div_image_change_2" height="180" width="180">
+                            <select class="select2" id="desired_division_div" onchange="divCalculate(this.value); document.getElementById('div_image_change_2').src = divUrlMap[this.value];" autofocus>
                               <optgroup label="Challenger division">
                                 <option value="4999">Challenger</option>
                               </optgroup>
@@ -153,8 +146,8 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="label label-success">Choose your current division</label>
-                          <%= image_tag('bronze_5.png', size: '180x180') %>
-                          <select class="select2" id="current_division_win" onchange="winCalculate().reload()" >
+                          <img src="/img/bronze_v.png" id="win_image_change" height="180" width="180">
+                          <select class="select2" id="current_division_win" onchange="winCalculate(document.getElementById('demo3').value); document.getElementById('win_image_change').src = winUrlMap[this.value];" >
                             <optgroup label="Bronze division">
                               <option value="4.1" >Bronze V</option>
                               <option value="4">Bronze IV</option>
@@ -167,10 +160,10 @@
                               <option value="3.65">Silver IV</option>
                               <option value="3.6">Silver III</option>
                               <option value="3.5">Silver II</option>
-                              <option value="3.5">Silver I</option>
+                              <option value="3.45">Silver I</option>
                             </optgroup>
                             <optgroup label="Gold division">
-                              <option value="3.5">Gold V</option>
+                              <option value="3.4">Gold V</option>
                               <option value="3.3">Gold IV</option>
                               <option value="3.1">Gold III</option>
                               <option value="2.9">Gold II</option>
@@ -214,6 +207,7 @@
                       </div>
                     </div>   <!-- end row -->
                   </div><!--.tab-pane-->
+        <!--  ############## BUDGET BOOST ###############
                   <div role="tabpanel" class="tab-pane fade" id="tabs-2-tab-3">
                     <div class="container">
                       <div class="col-md-12">
@@ -229,7 +223,7 @@
                                          class="form-control" id="input-budget" placeholder="Amount" onkeyup="this.value=this.value.replace(/[^\d]/,'')"
                                          onchange="budCalculate(this.value)">
                                   <div class="input-group-addon">.00</div>
-                                </div> <!-- end form group -->
+                                </div> <!-- end form group
                               </div>
                             </div>
                             <div class="row">
@@ -452,6 +446,68 @@
 </div>
 
 
+<script>
+  var divUrlMap = {
+    "0"         : "/img/bronze_v.png",
+    "10"        : "/img/bronze_iv.png",
+    "25"        : "/img/bronze_iii.png",
+    "40.2"      : "/img/bronze_ii.png",
+    "55.4"      : "/img/bronze_i.png",
+    "70.6"      : "/img/silver_v.png",
+    "90.55"     : "/img/silver_iV.png",
+    "111.45"    : "/img/silver_iii.png",
+    "132.35"    : "/img/silver_ii.png",
+    "153.25"    : "/img/silver_i.png",
+    "177.95"    : "/img/gold_v.png",
+    "203.6"     : "/img/gold_iv.png",
+    "230.2"     : "/img/gold_iii.png",
+    "257.75"    : "/img/gold_ii.png",
+    "287.2"     : "/img/gold_i.png",
+    "322.35"    : "/img/platinum_v.png",
+    "360.35"    : "/img/platinum_iv.png",
+    "403.1"     : "/img/platinum_iii.png",
+    "462.95"    : "/img/platinum_ii.png",
+    "522.8"     : "/img/platinum_i.png",
+    "598.8"     : "/img/diamond_v.png",
+    "693.8"     : "/img/diamond_iv.png",
+    "807.8"     : "/img/diamond_iii.png",
+    "940.8"     : "/img/diamond_ii.png",
+    "1130.8"    : "/img/diamond_i.png",
+    "1630.8"    : "/img/master.png",
+    "4999"      : "/img/challenger.png"
+  };
+</script>
+<script>
+    var winUrlMap = {
+      "4.1"    : "/img/bronze_v.png",
+      "4"      : "/img/bronze_iv.png",
+      "3.9"    : "/img/bronze_iii.png",
+      "3.8"    : "/img/bronze_ii.png",
+      "3.75"   : "/img/bronze_i.png",
+      "3.7"    : "/img/silver_v.png",
+      "3.65"   : "/img/silver_iv.png",
+      "3.6"    : "/img/silver_iii.png",
+      "3.5"    : "/img/silver_ii.png",
+      "3.45"   : "/img/silver_i.png",
+      "3.4"    : "/img/gold_v.png",
+      "3.3"    : "/img/gold_iv.png",
+      "3.1"    : "/img/gold_iii.png",
+      "2.9"    : "/img/gold_ii.png",
+      "2.7"    : "/img/gold_i.png",
+      "2.5"    : "/img/platinum_v.png",
+      "2.3"    : "/img/platinum_iv.png",
+      "2.1"    : "/img/platinum_iii.png",
+      "1.9"    : "/img/platinum_ii.png",
+      "1.7"    : "/img/platinum_i.png",
+      "1.6"    : "/img/diamond_v.png",
+      "1.5"    : "/img/diamond_iv.png",
+      "1.3"    : "/img/diamond_iii.png",
+      "1.1"    : "/img/diamond_ii.png",
+      "0.9"    : "/img/diamond_i.png",
+      "0.7"    : "/img/master.png",
+      "0.5"    : "/img/challenger.png"
+    };
+</script>
 
 <script>
   $(document).ready(function(){
@@ -469,6 +525,8 @@
     product1.innerHTML = "<strong class='bg-info'>Current rank</strong> " + division_text;
     product2.innerHTML = "<strong class='bg-info'>wins</strong> " + wins  ;
   }
+
+/*
   function budCalculate(budget_amount) {
     var budget = 0;
     console.log(typeof budget_amount);
@@ -480,6 +538,7 @@
     product2.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> $" + (budget * 1.13).toFixed(2);
     return budget;
   }
+*/
 
   function divCalculate(desired_division) {
     var current_division = $('select[id=current_division_div]').val();
@@ -504,11 +563,6 @@
       totalAmt = 0;
     return totalAmt;
   }
-
-  var colorUrlMap = {
-    "bronze_v" : "/img/bronze_v.png",
-    "bronze_iv" : "/img/bronze_iv.jpg",
-
-  };
 </script>
+
 
