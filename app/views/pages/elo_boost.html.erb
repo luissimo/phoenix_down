@@ -6,8 +6,8 @@
       <section class="card box-typical">
         <div class="card-block">
           <h5 class="with-border">Elo Boost</h5>
-           <div class="col-md-12 center-block">
-            <div class="row">
+            <div class="col-md-12 center-block">
+             <div class="row">
               <section class="tabs-section" width="100%">
                 <div class="tabs-section-nav">
                   <div class="tbl">
@@ -44,48 +44,48 @@
                       <div class="row">
                         <div class="form-group float-left">
                           <label class="label label-success">Choose your current division</label>
-                          <%= image_tag('bronze_5.png', size: '180x180') %>
-                          <select class="select2" id="current_division_div">
+                          <%= image_tag('bronze_iv.png', size: '180x180', id: 'div_image_change') %>
+                          <select class="select2" id="current_division_div" onchange="getElementByID('div_image_change').src = colorUrlMap[this.name];">
                             <optgroup label="Bronze division">
-                              <option value="0">Bronze V</option>
-                              <option value="10">Bronze IV</option>
-                              <option value="25">Bronze III</option>
-                              <option value="40.2">Bronze II</option>
-                              <option value="55.4">Bronze I</option>
+                              <option value="0" name="bronze_v">Bronze V</option>
+                              <option value="10" name="bronze_iv">Bronze IV</option>
+                              <option value="25" name="bronze_iii">Bronze III</option>
+                              <option value="40.2" name="bronze_ii">Bronze II</option>
+                              <option value="55.4" name="bronze_i">Bronze I</option>
                             </optgroup>
                             <optgroup label="Silver division">
-                              <option value="70.6">Silver V</option>
-                              <option value="90.55">Silver IV</option>
-                              <option value="111.45">Silver III</option>
-                              <option value="132.35">Silver II</option>
-                              <option value="153.25">Silver I</option>
+                              <option value="70.6" name="silver_v">Silver V</option>
+                              <option value="90.55" name="silver_iv">Silver IV</option>
+                              <option value="111.45" name="silver_iii">Silver III</option>
+                              <option value="132.35" name="silver_ii">Silver II</option>
+                              <option value="153.25" name="silver_i">Silver I</option>
                             </optgroup>
                             <optgroup label="Gold division">
-                              <option value="177.95">Gold V</option>
-                              <option value="203.6">Gold IV</option>
-                              <option value="230.2">Gold III</option>
-                              <option value="257.75">Gold II</option>
-                              <option value="287.2">Gold I</option>
+                              <option value="177.95" name="gold_v">Gold V</option>
+                              <option value="203.6" name="gold_iv">Gold IV</option>
+                              <option value="230.2" name="gold_iii">Gold III</option>
+                              <option value="257.75" name="gold_ii">Gold II</option>
+                              <option value="287.2" name="gold_i">Gold I</option>
                             </optgroup>
                             <optgroup label="Platinum division">
-                              <option value="322.35">Platinum V</option>
-                              <option value="360.35">Platinum IV</option>
-                              <option value="403.1">Platinum III</option>
-                              <option value="462.95">Platinum II</option>
-                              <option value="522.8">Platinum I</option>
+                              <option value="322.35" name="platinum_v">Platinum V</option>
+                              <option value="360.35" name="platinum_iv">Platinum IV</option>
+                              <option value="403.1" name="platinum_iii">Platinum III</option>
+                              <option value="462.95" name="platinum_ii">Platinum II</option>
+                              <option value="522.8" name="platinum_i">Platinum I</option>
                             </optgroup>
                             <optgroup label="Diamond division">
-                              <option value="598.8">Diamond V</option>
-                              <option value="693.8">Diamond IV</option>
-                              <option value="807.8">Diamond III</option>
-                              <option value="940.8">Diamond II</option>
-                              <option value="1130.8">Diamond I</option>
+                              <option value="598.8" name="diamond_v">Diamond V</option>
+                              <option value="693.8" name="diamond_iv">Diamond IV</option>
+                              <option value="807.8" name="diamond_iii">Diamond III</option>
+                              <option value="940.8" name="diamond_ii">Diamond II</option>
+                              <option value="1130.8" name="diamond_i">Diamond I</option>
                             </optgroup>
                             <optgroup label="Master division">
-                              <option value="1630.8">Master</option>
+                              <option value="1630.8" name="master">Master</option>
                             </optgroup>
                             <optgroup label="Challenger division">
-                              <option value="4999">Challenger</option>
+                              <option value="4999" name="challenger">Challenger</option>
                             </optgroup>
                           </select>
                         </div> <!-- end form group -->
@@ -242,7 +242,7 @@
                   </div><!--.tab-pane-->
                 </div><!--.tab-content-->
               </section><!--.tabs-section-->
-            </div>
+             </div>
            </div>
           <div class="row">
             <div class="row"></div>
@@ -251,7 +251,6 @@
       </section
     </div>
   </div>
-
 
   <%= render 'shared/payments' %>
 
@@ -505,5 +504,11 @@
       totalAmt = 0;
     return totalAmt;
   }
+
+  var colorUrlMap = {
+    "bronze_v" : "/img/bronze_v.png",
+    "bronze_iv" : "/img/bronze_iv.jpg",
+
+  };
 </script>
 

@@ -2,9 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac12f3b4-673d-424f-a649-998d79e1b834" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bronze_i.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bronze_ii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bronze_iii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bronze_iv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bronze_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/challenger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/diamond_i.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/diamond_ii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/diamond_iii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/diamond_iv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/diamond_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/gold_i.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/gold_ii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/gold_iii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/gold_iv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/gold_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/master.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/platinum_i.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/platinum_ii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/platinum_iii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/platinum_iv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/platinum_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/silver_i.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/silver_ii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/silver_iii.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/silver_iv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/silver_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/unranked.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/elo_boost.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/elo_boost.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins.js" afterPath="$PROJECT_DIR$/public/js/plugins.js" />
     </list>
     <ignored path="boosta2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +64,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="elo_boost.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="elo_boost.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/elo_boost.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="508" column="0" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="512" column="9" selection-start-line="512" selection-start-column="9" selection-end-line="512" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="24291" column="23" selection-start-line="24291" selection-start-column="23" selection-end-line="24291" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,7 +165,6 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/partials/_header.html.erb" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/app/views/pages/division_boost.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/budget_boosting.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/win_boost.html.erb" />
@@ -137,8 +186,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_payments.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/pages/elo_boost.html.erb" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/public/js/plugins.js" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/app/views/pages/elo_boost.html.erb" />
       </list>
     </option>
   </component>
@@ -223,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,14 +517,15 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/assets" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: boosta2">
@@ -685,12 +737,12 @@
       <workItem from="1463307707561" duration="17427000" />
       <workItem from="1463435334827" duration="50439000" />
       <workItem from="1463922798647" duration="24494000" />
-      <workItem from="1464182071386" duration="14687000" />
+      <workItem from="1464182071386" duration="17788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161526000" />
+    <option name="totallyTimeSpent" value="164627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -703,7 +755,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2267525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -712,7 +764,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292011" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3901869" sideWeight="0.77610874" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3901869" sideWeight="0.77610874" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -744,13 +796,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/pages/boosters.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/faq.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -832,14 +877,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/sinterklaas.html.erb" />
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="15938" column="0" selection-start-line="15938" selection-start-column="0" selection-end-line="15938" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1010,14 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1038,22 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="835" column="81" selection-start-line="835" selection-start-column="81" selection-end-line="835" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1082,18 +1095,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/elo_boost.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/js/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <marker date="1464434070000" expanded="true" signature="409775:410128" placeholder="..." />
+            <marker date="1464434070000" expanded="true" signature="423761:423797" placeholder="..." />
+            <marker date="1464434070000" expanded="true" signature="424030:424054" placeholder="..." />
+            <marker date="1464434070000" expanded="true" signature="526846:526859" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="508" column="0" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="24291" column="23" selection-start-line="24291" selection-start-column="23" selection-end-line="24291" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/elo_boost.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="512" column="9" selection-start-line="512" selection-start-column="9" selection-end-line="512" selection-end-column="9" />
           <folding />
         </state>
       </provider>
