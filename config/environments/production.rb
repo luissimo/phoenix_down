@@ -1,6 +1,6 @@
 Rails.application.configure do
     ## host for production devise
-    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+    config.action_mailer.default_url_options = { host: 'https://intense-harbor-93889.herokuapp.com' }
 
 
   # Code is not reloaded between requests.
