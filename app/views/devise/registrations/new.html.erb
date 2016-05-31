@@ -1,46 +1,29 @@
-<% provide(:title, "Sign Up") %>
-
-<div class="col-md-12">
-  <form class="sign-box">
-    <header class="sign-title">Sign Up</header>
+<h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class=" field form-group">
-    <%= f.label :email, class: 'float-left' %>
-    <%= f.email_field :email, class: 'form-control', autofocus: true %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="field form-group">
-    <%= f.label :password, class: 'float-left' %>
+  <div class="field">
+    <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, class: 'form-control', autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="field form-group">
-    <%= f.label :password_confirmation, class: 'float-left' %>
-    <%= f.password_field :password_confirmation, class: 'form-control', autocomplete: "off" %>
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up", class: 'btn btn-rounded' %>
+    <%= f.submit "Sign up" %>
   </div>
-  <div class="form-group">
-    <p class="sign-note">Already have an account? <%= link_to "Sign In", new_user_session_path %></p>
-  </div>
+<% end %>
 
-  </form>
-    <% end %>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-
-</div>
+<%= render "devise/shared/links" %>
