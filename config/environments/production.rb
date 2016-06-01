@@ -5,7 +5,7 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE
+      openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
       address:             'smtp.sendgrid.com',
       port:                 587,
       domain:               'heroku.com', #you can also use google.com
