@@ -14,7 +14,7 @@ Rails.application.configure do
           :domain             => 'gmail.com', #you can also use google.com
           :authentication     => :plain,
           :user_name          => 'khijbar@gmail.com',
-          :password           => 'jlmabc321'
+          :password           => ''
       }
 
   config.cache_classes = false

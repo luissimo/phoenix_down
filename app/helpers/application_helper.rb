@@ -24,7 +24,5 @@ module ApplicationHelper
     @devise_mapping ||= Devise.mappings[:user]
   end
 
-=begin
-  <% provide(:title, "About") %>
-=end
+
 end
