@@ -40,15 +40,15 @@
             </button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
               <% if user_signed_in? %>
-              <%= link_to '<span class="font-icon glyphicon glyphicon-profile"</span> My account'.html_safe,
-                              edit_user_registration_path %>
+              <%= link_to '<span class="font-icon glyphicon glyphicon-check"</span> Edit my account'.html_safe,
+                              edit_user_registration_path, class: 'dropdown-item' %>
+                  <div class="dropdown-divider"></div>
               <%= link_to '<span class="font-icon glyphicon glyphicon-log-out"></span> Logout'.html_safe,
                               destroy_user_session_path, method: :delete,  class: 'dropdown-item' %>
-              <div class="dropdown-divider"></div>
               <% else %>
               <%= link_to '<span class="font-icon glyphicon glyphicon-log-in"></span> Login'.html_safe,
                                   new_user_session_path,  class: 'dropdown-item' %>
-              <%= link_to '<span class="font-icon glyphicon glyphicon-log-in"></span> Sign up'.html_safe,
+              <%= link_to '<span class="font-icon glyphicon glyphicon-new-window"></span> Sign up'.html_safe,
                               new_user_registration_path,  class: 'dropdown-item' %>
               <% end %>
             </div>
