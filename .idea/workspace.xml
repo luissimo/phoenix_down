@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac12f3b4-673d-424f-a649-998d79e1b834" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/boosta2.iml" afterPath="$PROJECT_DIR$/.idea/boosta2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/elo_boost.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/elo_boost.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_payments.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_payments.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="boosta2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -609,12 +602,12 @@
       <workItem from="1463435334827" duration="50439000" />
       <workItem from="1463922798647" duration="24494000" />
       <workItem from="1464182071386" duration="32458000" />
-      <workItem from="1464553450948" duration="48777000" />
+      <workItem from="1464553450948" duration="49078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228074000" />
+    <option name="totallyTimeSpent" value="228375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
