@@ -6,7 +6,6 @@ class PagesController < ApplicationController
   end
 
   def elo_boost
-
   end
 
   def division_boost

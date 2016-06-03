@@ -524,6 +524,9 @@
     product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Win boost";
     product1.innerHTML = "<strong class='bg-info'>Current rank</strong> " + division_text;
     product2.innerHTML = "<strong class='bg-info'>wins</strong> " + wins  ;
+
+    document.getElementById('total_cost_eur').value = (((wins * 16) / division_value) * 1.13 ).toFixed(2);
+    document.getElementById('product_name').value = "Win Boost: " + division_text + " > " + wins + " wins";
   }
 
 /*
@@ -549,6 +552,10 @@
     product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Division boost";
     product1.innerHTML = "<strong class='bg-info'>Current division</strong> " + current_division_text;
     product2.innerHTML = "<strong class='bg-info'>Desired division</strong> " + desired_division_text;
+
+    document.getElementById('total_cost_eur').value = calculateTotalAmt(desired_division,'usd');
+    document.getElementById('product_name').value = "Division Boost: " + current_division_text + " > " + desired_division_text;
+
   }
 
   function calculateTotalAmt(desired_division, currencyType) {
@@ -563,6 +570,7 @@
       totalAmt = 0;
     return totalAmt;
   }
+
 </script>
 
 

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  resources :checkouts,  only: [:new, :create, :show]
 
   root                          'pages#index'
   get 'boosting'            =>  'pages#boosting'
