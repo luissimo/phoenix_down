@@ -12,7 +12,7 @@ class Contact < MailForm::Base
   def headers
     {
         :subject => "Boost form filled in",
-        :to => "afg.010@hotmail.com, khijbar@gmail.com",
+        :to => "afg.010@hotmail.com",
         :from => %("#{paypal_id}" <#{email}>)
     }
   end
