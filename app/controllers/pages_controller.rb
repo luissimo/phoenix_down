@@ -8,15 +8,6 @@ class PagesController < ApplicationController
   def elo_boost
   end
 
-  def division_boost
-  end
-
-  def win_boost
-  end
-
-  def budget_boosting
-  end
-
   def boosters
   end
 
@@ -44,6 +35,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def jobs
+  def success
   end
 end
