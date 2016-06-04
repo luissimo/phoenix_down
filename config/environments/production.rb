@@ -8,7 +8,7 @@ Rails.application.configure do
       openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
       address:             'smtp.sendgrid.com',
       port:                 587,
-      domain:               'heroku.com', #you can also use google.com
+      domain:               'heroku.com',
       authentication:       :plain,
       enable_starttls_auto: true,
       user_name:            ENV['SENDGRID_USERNAME'],
