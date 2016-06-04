@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :checkouts,  only: [:new, :create, :show]
+  match '/success', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
 
   root                          'pages#index'
   get 'boosting'            =>  'pages#boosting'
@@ -21,7 +23,6 @@ Rails.application.routes.draw do
   get 'placement-matches'   =>  'pages#placement_matches'
   get 'normal-draft'        =>  'pages#normal_draft'
   get 'budget-boosting'     =>  'pages#budget_boosting'
-  get 'success'             =>  'pages#success'
 
 # https://intense-harbor-93889.herokuapp.com/ | https://git.heroku.com/intense-harbor-93889.git
 

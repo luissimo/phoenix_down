@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   before_action :authenticate_user!, only:  [:boosters]
 
 
@@ -35,6 +36,4 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def success
-  end
 end

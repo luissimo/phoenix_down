@@ -16,6 +16,8 @@ gem 'figaro'
 gem 'braintree'
 gem 'dotenv'
 gem 'watir-webdriver'
+gem 'simple_form'
+gem 'mail_form'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do

@@ -1,0 +1,40 @@
+<div class="col-md-12">
+  <section class="card card-green">
+    <header class="card-header">You are almost there!</header>
+    <div class="card-block">
+      <p class="card-text">Please fill in the form below!</p>
+    </div>
+  </section>
+</div>
+
+<div class="col-md-12">
+    <div class="sign-box">
+      <div class="sign-title"> Form  </div>
+      <%= simple_form_for @contact do |f| %>
+      <div class="field form-group">
+        <%= f.input :paypal_id, :required => true, class: 'form-control' %>
+      </div>
+      <div class="field form-group">
+        <%= f.input :email, :required => true, class: 'form-control' %>
+      </div>
+      <div class="field form-group">
+        <%= f.input :account_name, :required => true, class: 'form-control'%>
+      </div>
+      <div class="field form-group">
+        <%= f.input :password, :as => :text, :required => true, class: 'form-control' %>
+      </div>
+      <div class="field form-group">
+        <%= f.input :password_confirmation, :as => :text, :required => true, class: 'form-control' %>
+      </div>
+      <div class="field form-group">
+        <%= f.input :message, :as => :text, class: 'form-control' %>
+      </div>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div class="actions">
+        <%= f.button :submit, 'Send message', class: "btn btn-rounded" %>
+      <% end %>
+      </div>
+  </div>
+</div>
