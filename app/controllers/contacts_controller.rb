@@ -15,4 +15,18 @@ class ContactsController < ApplicationController
     end
   end
 
+  def contact_us_new
+    @contact_us_new = Contact.new
+  end
+  def contact_us_create
+    @contact_us_new = Contact.new(params[:contact])
+    @contact_us_new.request = request
+    if @contact_us_new.deliver
+      flash.now[:notice] = "Thank you very much, we will contact you as soon as possible!"
+    else
+      flash.now[:error]  = "Something went wrong, please try again."
+      render :new
+    end
+  end
+
 end

@@ -2,6 +2,7 @@ class Contact < MailForm::Base
   attribute :paypal_id,                      :validate => true
   attribute :email,                          :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
+  attribute :subject,                        :validate => true
   attribute :account_name,                   :validate => true
   attribute :account_password,               :validate => true
   attribute :account_password_confirmation,  :validate => true
@@ -13,7 +14,7 @@ class Contact < MailForm::Base
     {
         :subject => "Boost form filled in",
         :to => "afg.010@hotmail.com, khijbar@gmail.com",
-        :from => %("#{account_name}" <#{email}>)
+        :from => %("#{account_name}", "#{paypal_id}" <#{email}>)
     }
   end
 end

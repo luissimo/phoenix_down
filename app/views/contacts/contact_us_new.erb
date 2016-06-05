@@ -36,18 +36,22 @@
             <i class="font-icon font-icon-google-plus"></i>
           </a>
         </section>
+
         <form class="contacts-page-section">
-          <header class="box-typical-header-sm">Send Message</header>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="E-Mail"/>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject"/>
-          </div>
-          <div class="form-group">
-            <textarea rows="4" class="form-control" placeholder="Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-rounded">Send</button>
+          <%= simple_form_for @contact_us_new do |f| %>
+              <div class="form-group">
+                <%= f.input :email, :required => true, class: 'form-control' %>
+              </div>
+              <div class="form-group">
+                <%= f.input :subject, :required => true, class: 'form-control' %>
+              </div>
+              <div class="form-group">
+                <%= f.input :message, :as => :text, :required => true, class: 'form-control' %>
+              </div>
+              <div class="actions">
+                <%= f.button :submit, 'Send', class: "btn btn-rounded" %>
+              </div>
+          <% end %>
         </form>
         <section class="contacts-page-section">
           <header class="box-typical-header-sm">Other way</header>

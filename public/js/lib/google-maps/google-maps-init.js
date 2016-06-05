@@ -9,10 +9,10 @@ var mapMarker = new google.maps.MarkerImage(
 
 // Инициализация первой карты (France)
 function initMap() {
-    var secheltLoc = new google.maps.LatLng(48.863807, 2.339659);
+    var secheltLoc = new google.maps.LatLng(30.863807, 6.339659);
 
     var myMapOptions = {
-        zoom: 4,
+        zoom: 5,
         center: secheltLoc,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -20,16 +20,14 @@ function initMap() {
 
 
     var marker = new google.maps.Marker({
-        position: {lat: 48.863807, lng: 2.339659},
+        position: {lat: 51.960484, lng: 4.580403},
         map: theMap,
         icon: mapMarker
     });
 
     var myOptions = {
         content:
-            "<p><i class='font-icon font-icon-pin'></i>16, Yafo Street, 94142 PARIS</p>" +
-            "<p><i class='font-icon font-icon-phone'></i>(+972 2) 629 06 32</p>" +
-            "<p><i class='font-icon font-icon-mail'></i>johndoe@gmail.com</p>",
+            "<p><i class='font-icon font-icon-mail'></i>info@eloboost.io</p>",
         disableAutoPan: false,
         maxWidth: 0,
         pixelOffset: new google.maps.Size(-140, 0),
