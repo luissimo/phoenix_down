@@ -2,8 +2,8 @@
   <div class="container-fluid">
 
       <%= link_to root_path, class: 'site-logo' do %>
-      <img class="hidden-md-down img-responsive" src="/img/iconReal2.png" alt="Elo Boost IO">
-      <img class="hidden-lg-up img-responsive" src="/img/iconReal2.png" alt="Elo Boost IO">
+      <img class="hidden-md-down" src="/img/iconReal2.png" alt="Elo Boost IO">
+      <img class="hidden-lg-up" src="/img/iconReal2.png" alt="Elo Boost IO">
       <% end %>
 
     <div class="site-header-content">
@@ -40,7 +40,7 @@
             </button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
               <% if user_signed_in? %>
-              <%= link_to '<span class="font-icon glyphicon glyphicon-check"</span> Edit my account'.html_safe,
+              <%= link_to '<span class="font-icon glyphicon glyphicon-check"></span> My account'.html_safe,
                               edit_user_registration_path, class: 'dropdown-item' %>
                   <div class="dropdown-divider"></div>
               <%= link_to '<span class="font-icon glyphicon glyphicon-log-out"></span> Logout'.html_safe,
@@ -62,9 +62,11 @@
         <div class="mobile-menu-right-overlay"></div>
         <div class="site-header-collapsed">
           <div class="site-header-collapsed-in">
-
             <div class="dropdown dropdown-typical">
-
+              <a class="dropdown-toggle no-arr">
+                <span class="font-icon font-icon-wallet"></span>
+                <span class="lbl">My account</span>
+              </a>
             </div><!--.site-header-collapsed-in-->
           </div><!--.site-header-collapsed-->
         </div><!--site-header-content-in-->
