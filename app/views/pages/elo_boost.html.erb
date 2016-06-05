@@ -509,7 +509,11 @@
 
 <script>
   $(document).ready(function(){
-    $("input[name='demo3']").TouchSpin();
+    $("input[name='demo3']").TouchSpin({
+      min: 1,
+      max: 9,
+      step: 1
+    });
   });
 </script>
 <script>
