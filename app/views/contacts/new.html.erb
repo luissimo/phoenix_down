@@ -1,40 +1,79 @@
-<div class="col-md-12">
-  <section class="card card-green">
-    <header class="card-header">You are almost there!</header>
-    <div class="card-block">
-      <p class="card-text">Please fill in the form below!</p>
-    </div>
-  </section>
-</div>
+<%= provide(:title, 'Contact') %>
 
-<div class="col-md-12 text-center">
-    <div class="sign-box">
-      <div class="sign-title"> Form  </div>
-      <%= simple_form_for @contact do |f| %>
-      <div class="form-group center-block">
-        <%= f.input :paypal_id, :required => true, class: 'form-control' %>
+<section class="box-typical contacts-page">
+  <header class="box-typical-header box-typical-header-bordered">
+    <div class="tbl-row">
+      <div class="tbl-cell tbl-cell-title">
+        <h1>Contact us</h1>
+        <ul class="contacts-tabs" role="tablist">
+          <li class="nav-item">
+            <a href="#tab-contact-1" role="tab" data-toggle="tab" class="active">Europe</a>
+          </li>
+        </ul>
       </div>
-      <div class="form-group">
-        <%= f.input :email, :required => true, class: 'form-control' %>
+      <div class="tbl-cell tbl-cell-actions">
+        <button type="button" class="action-btn action-btn-expand">
+          <i class="font-icon font-icon-expand"></i>
+        </button>
       </div>
-      <div class="form-group">
-        <%= f.input :account_name, :required => true, class: 'form-control'%>
-      </div>
-      <div class="form-group">
-        <%= f.input :account_password, :as => :password, :required => true, class: 'form-control' %>
-      </div>
-      <div class="form-group">
-        <%= f.input :account_password_confirmation, :as => :password, :required => true, class: 'form-control' %>
-      </div>
-      <div class="form-group">
-        <%= f.input :message, :as => :text, class: 'form-control' %>
-      </div>
-      <div class= "hidden">
-        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-      </div>
-      <div class="actions">
-        <%= f.button :submit, 'Send message', class: "btn btn-rounded" %>
-      <% end %>
-      </div>
-  </div>
-</div>
+    </div>
+  </header>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="clearfix tab-pane active" id="tab-contact-1">
+      <div class="contacts-page-col-left">
+        <div class="contacts-page-col-left-in">
+          <div id="map_canvas" class="map"></div>
+        </div><!--.contacts-page-col-left-in-->
+      </div><!--.contacts-page-col-left-->
+      <div class="contacts-page-col-right">
+        <section class="contacts-page-section">
+          <header class="box-typical-header-sm">Connect</header>
+          <a href="#" class="contact">
+            <i class="font-icon font-icon-facebook"></i>
+          </a>
+          <a href="#" class="contact">
+            <i class="font-icon font-icon-google-plus"></i>
+          </a>
+        </section>
+
+        <div class="contacts-page-section">
+          <%= form_for @contact do |f| %>
+
+
+              <div class="field form-group">
+                <%= f.label :email, class: 'float-left' %>
+                <%= f.email_field :email, class: 'form-control', required: true, autocomplete: "off" %>
+              </div>
+
+
+              <div class="field form-group">
+                <%= f.label :subject, class: 'float-left' %>
+                <%= f.text_field :subject, class: 'form-control', required: true, autocomplete: "off" %>
+              </div>
+
+              <div class="field form-group">
+                <%= f.label :message, class: 'float-left' %>
+                <%= f.text_area :message, as: :text, required: true, class: 'form-control', autocomplete: "off" %>
+              </div>
+              <div class="hidden">
+                <%= f.label :nickname %>
+                <%= f.text_field :nickname, hint: 'leave this field blank' %>
+              </div>
+
+              <%= f.submit 'Send message', class: 'btn btn-rounded' %>
+          <% end %>
+        </div>
+        <section class="contacts-page-section">
+          <header class="box-typical-header-sm">Other way</header>
+          <p class="contact-other"><i class="font-icon font-icon-mail"></i>info@eloboost.io</p>
+        </section>
+      </div><!--.contacts-page-col-right-->
+    </div><!--.tab-pane-->
+  </div><!--.tab-content-->
+</section><!--.box-typical-->
+
+<script src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+<script src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+<script src="js/lib/google-maps/infobox.js"></script>
+<script src="js/lib/google-maps/google-maps-init.js"></script>

@@ -18,37 +18,13 @@
       </li>
     </ul>
   </div><!--.tabs-section-nav-->
-
+<% @contact = Contact.new %>
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="tabs-4-tab-1">
+
       <div class="sign-box">
-        <h2> Boost form  </h2>
-        <%= simple_form_for(resource_contact_new, as: :contact, url: @boost_form) do |f| %>
-            <div class="field">
-              <%= f.input :paypal_id, :required => true, class: 'form-control' %>
-            </div>
-            <div class="field">
-              <%= f.input :email, :required => true, class: 'form-control' %>
-            </div>
-            <div class="field">
-              <%= f.input :account_name, :required => true, class: 'form-control'%>
-            </div>
-            <div class="field">
-              <%= f.input :account_password, :as => :password, :required => true, class: 'form-control' %>
-            </div>
-            <div class="field">
-              <%= f.input :account_password_confirmation, :as => :password, :required => true, class: 'form-control' %>
-            </div>
-            <div class="field">
-              <%= f.input :message, :as => :text, class: 'form-control' %>
-            </div>
-            <div class= "hidden">
-              <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-            </div>
-            <div class="actions">
-              <%= f.button :submit, 'Send message', class: "btn btn-rounded" %>
-            </div>
-        <% end %>
+        <header class="sign-title">Boost form</header>
+        <%= link_to 'Go to form', boosts_path, class: 'btn btn-rounded' %>
       </div>
     </div><!--.tab-pane-->
     <div role="tabpanel" class="tab-pane fade" id="tabs-4-tab-2">

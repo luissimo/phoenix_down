@@ -1,3 +1,64 @@
+class ContactsController < ApplicationController
+
+  def new
+    @contact = Contact.new
+  end
+
+  def create
+    @contact = Contact.new(params[:contact])
+    @contact.request = request
+    if @contact.deliver
+      flash.now[:notice] = "Thank you very much, we will contact you on your email with further instructions"
+    else
+      flash.now[:error]  = "Something went wrong, please try again."
+      render :new
+    end
+  end
+
+  def contact_us_new
+    @contact_us_new = Contact.new
+  end
+  def contact_us_create
+    @contact_us_new = Contact.new(params[:contact])
+    @contact_us_new.request = request
+    if @contact_us_new.deliver
+      flash.now[:notice] = "Thank you very much, we will contact you as soon as possible!"
+    else
+      flash.now[:error]  = "Something went wrong, please try again."
+      render :new
+    end
+  end
+
+end
+
+////////
+
+class Contact < MailForm::Base
+  attribute :paypal_id,                      :validate => true
+  attribute :email,                          :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :message
+  attribute :subject,                        :validate => true
+  attribute :account_name,                   :validate => true
+  attribute :account_password,               :validate => true
+  attribute :account_password_confirmation,  :validate => true
+  attribute :nickname,                       :captcha  => true
+
+  # Declare the e-mail headers. It accepts anything the mail method
+  # in ActionMailer accepts.
+  def headers
+    {
+        :subject => "Boost form filled in",
+        :to => "afg.010@hotmail.com, khijbar@gmail.com",
+        :from => %("#{account_name}", "#{paypal_id}" <#{email}>)
+    }
+  end
+end
+
+
+
+//////// CONTACT PAGE //////////
+
+
 <%= provide(:title, 'Contact') %>
 
 <section class="box-typical contacts-page">

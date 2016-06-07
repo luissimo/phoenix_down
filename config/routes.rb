@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
+  ## devise
   devise_for :users
-  resources :checkouts,  only: [:new, :create, :show]
   ## boost form
-  match '/success', to: 'contacts#new', via: 'get'
-  resources "contacts", only: [:new, :create]
+  match '/boosts', to: 'boosts#new', via: 'get'
+  resources :boosts,   only: [:new, :create]
   ## contact form
-  match '/contact-us', to: 'contacts#contact_us_new', via: 'get'
-  resources "contacts", only: [:contact_us_new, :contact_us_create]
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources :contacts, only: [:new, :create]
 
   root                          'pages#index'
   get 'boosting'            =>  'pages#boosting'
@@ -19,7 +19,6 @@ Rails.application.routes.draw do
   get 'faqs_contact'        =>  'pages#faq_contact_booster'
   get 'faqs_payment'        =>  'pages#faq_payment'
   get 'faqs_safety'         =>  'pages#faq_safety_security'
-  get 'contact_us'          =>  'pages#contact'
   get 'elo-boost'           =>  'pages#elo_boost'
   get 'division-boost'      =>  'pages#division_boost'
   get 'win-boost'           =>  'pages#win_boost'
