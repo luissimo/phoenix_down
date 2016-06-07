@@ -13,6 +13,11 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#tabs-4-tab-3" role="tab" data-toggle="tab">
+          Profile picture
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tabs-4-tab-4" role="tab" data-toggle="tab">
           Delete Account
         </a>
       </li>
@@ -32,7 +37,16 @@
       <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-          <%= devise_error_messages! %>
+
+          <% if devise_error_messages!.present? %>
+              <div class="alert alert-warning alert-icon alert-close alert-dismissable fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <i class="font-icon font-icon-warning"></i>
+                <%= devise_error_messages! %>
+              </div>
+          <% end %>
 
           <div class="field form-group">
             <%= f.label :email %>
@@ -64,15 +78,20 @@
       <% end %>
     </div><!--.tab-pane-->
     <div role="tabpanel" class="tab-pane fade" id="tabs-4-tab-3">
-      <div class="text-center">
-      <h2>Delete my account!</h2>
-
-      <%= button_to "Delete my account", registration_path(resource_name), method: :delete, data: { confirm: "Are you sure? Once your account is deleted you can never undo it" }, class: 'btn btn-rounded' %>
+      <div class="gravatar_edit text-center">
+        <%= image_tag current_user.gravatar_url %><br/><br/>
+        <a href="http://gravatar.com/emails" class="btn btn-rounded" target="_blank">Change profile picture</a>
       </div>
+    </div><!--.tab-pane-->
+    <div role="tabpanel" class="tab-pane fade" id="tabs-4-tab-4">
+        <div class="text-center">
+          <h2>Become a loser!</h2>
+          <%= button_to "Delete my account", registration_path(resource_name), method: :delete, data: { confirm: "Are you sure you want to become a loser? Once you enter the loserzone there is no coming back!" }, class: 'btn btn-rounded' %>
+        </div>
     </div><!--.tab-pane-->
   </div><!--.tab-content-->
 </section><!--.tabs-section-->
 
 
 
-<%= link_to "Back", :back, class: 'btn center-block' %>
+<%= link_to "Back", root_path, class: 'btn center-block' %>
