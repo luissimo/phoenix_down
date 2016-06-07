@@ -18,13 +18,14 @@
       </li>
     </ul>
   </div><!--.tabs-section-nav-->
-<% @contact = Contact.new %>
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="tabs-4-tab-1">
 
       <div class="sign-box">
         <header class="sign-title">Boost form</header>
-        <%= link_to 'Go to form', boosts_path, class: 'btn btn-rounded' %>
+        <%= link_to boosts_path do %>
+            <button type="button" class="btn btn-rounded">Go to form</button>
+            <% end %>
       </div>
     </div><!--.tab-pane-->
     <div role="tabpanel" class="tab-pane fade" id="tabs-4-tab-2">
