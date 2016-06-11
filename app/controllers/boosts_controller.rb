@@ -7,12 +7,14 @@ class BoostsController < ApplicationController
     def create
       @boost  = Boost.new(params[:boost])
       @boost.request = request
+      respond_to do |format|
       if @boost.deliver
-        flash.now[:notice] = "Thank you very much, we will contact you on your email with further instructions"
+        format.html { redirect_to @boost, notice: 'Thank you, we will contact you on your email with further instructions.' }
+        format.json { render :create, status: :created, location: @boost }
       else
-        flash.now[:error]  = "Something went wrong, please try again."
-        render :new
+        format.html { render :new }
+        format.json { render json: @boost.errors, status: :unprocessable_entity }
+      end
       end
     end
-
 end

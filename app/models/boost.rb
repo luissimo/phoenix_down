@@ -5,6 +5,7 @@ class Boost < MailForm::Base
   attribute :account_name,                   :validate => true
   attribute :account_password,               :validate => true
   attribute :account_password_confirmation,  :validate => true
+  attribute :server,                         :validate => true
   attribute :nickname,                       :captcha  => true
 
   # Declare the e-mail headers. It accepts anything the mail method

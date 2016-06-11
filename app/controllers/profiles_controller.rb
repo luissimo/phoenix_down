@@ -1,15 +1,16 @@
 class ProfilesController < ApplicationController
 
+
   def sinterklaas
   end
 
-  def douglas_diaz
+  def sailor
   end
 
-  def joost
+  def joosta
   end
 
-  def douglas_costa
+  def wessex
   end
 
   def el_pomponero

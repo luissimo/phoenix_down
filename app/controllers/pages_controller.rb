@@ -36,4 +36,7 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def success
+  end
+
 end

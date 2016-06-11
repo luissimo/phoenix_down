@@ -5,27 +5,32 @@
     <%= form_for @boost do |f| %>
 
         <div class="field form-group">
-          <%= f.label :paypal_transaction_reference, class: 'float-left' %>
+          <%= f.label :paypal_transaction_reference, class: 'float-left' %><p class="float-left">*</p>
           <%= f.text_field :paypal_transaction_reference, required: true, class: 'form-control', autofocus: true %>
         </div>
 
         <div class="field form-group">
-          <%= f.label :email, class: 'float-left' %>
+          <%= f.label :email, class: 'float-left' %><p class="float-left">*</p>
           <%= f.email_field :email, class: 'form-control', required: true, autocomplete: "off" %>
         </div>
 
         <div class="field form-group">
-          <%= f.label :account_name, class: 'float-left' %>
+          <%= f.label :server, class: 'float-left' %><p class="float-left">*</p>
+          <%= f.password_field :server, class: 'form-control', required: true,  autocomplete: "off" %>
+        </div>
+
+        <div class="field form-group">
+          <%= f.label :account_name, class: 'float-left' %><p class="float-left">*</p>
           <%= f.text_field :account_name, class: 'form-control', required: true,  autocomplete: "off" %>
         </div>
 
         <div class="field form-group">
-          <%= f.label :account_password, class: 'float-left' %>
+          <%= f.label :account_password, class: 'float-left' %><p class="float-left">*</p>
           <%= f.password_field :account_password, class: 'form-control',required: true, autocomplete: "off" %>
         </div>
 
         <div class="field form-group">
-          <%= f.label :account_password_confirmation, class: 'float-left' %>
+          <%= f.label :account_password_confirmation, class: 'float-left' %><p class="float-left">*</p>
           <%= f.password_field :account_password_confirmation, class: 'form-control', required: true,  autocomplete: "off" %>
         </div>
 

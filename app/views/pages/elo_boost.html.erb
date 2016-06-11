@@ -39,6 +39,7 @@
                           <label class="label label-success">Choose your current division</label>
                           <img src="/img/bronze_v.png" id="div_image_change" height="180" width="180">
                           <select class="select2" id="current_division_div" onchange="divCalculate(document.getElementById('desired_division_div').value); document.getElementById('div_image_change').src = divUrlMap[this.value];">
+                           <option value="0">Choose division</option>
                             <optgroup label="Bronze division">
                               <option value="0">Bronze V</option>
                               <option value="10">Bronze IV</option>
@@ -92,6 +93,7 @@
                             <label class="label label-success">Choose your desired division</label>
                             <img src="/img/challenger.png" id="div_image_change_2" height="180" width="180">
                             <select class="select2" id="desired_division_div" onchange="divCalculate(this.value); document.getElementById('div_image_change_2').src = divUrlMap[this.value];" autofocus>
+                             <option value="0">Choose division</option>
                               <optgroup label="Challenger division">
                                 <option value="4999">Challenger</option>
                               </optgroup>
@@ -148,6 +150,7 @@
                           <label class="label label-success">Choose your current division</label>
                           <img src="/img/bronze_v.png" id="win_image_change" height="180" width="180">
                           <select class="select2" id="current_division_win" onchange="winCalculate(document.getElementById('demo3').value); document.getElementById('win_image_change').src = winUrlMap[this.value];" >
+                           <option value="0">Choose division</option>
                             <optgroup label="Bronze division">
                               <option value="4.1" >Bronze V</option>
                               <option value="4">Bronze IV</option>
@@ -274,7 +277,7 @@
       </div>
     </div>
     <div class="tab-pane" id="w-1-tab-2" role="tabpanel">
-      <center>Division elo boost is a method LOL boosting. There are several alternatives on LOL elo boosting. One of these alternatives is division Elo boosting.
+      <center>Division elo boost is a LOL boosting method. There are several alternatives on LOL elo boosting. One of these alternatives is division Elo boosting.
         This LOL boosting method allows summoner’s to be boosted to the divison they want.</center>
     </div>
     <div class="tab-pane" id="w-1-tab-3" role="tabpanel">

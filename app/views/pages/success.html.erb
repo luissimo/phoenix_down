@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <section class="card card-blue-fill">
+      <header class="card-header text-center">
+        SUCCESS!
+      </header>
+      <div class="card-block">
+        <p class="card-text">Thank you for your trust in us. Please <%= link_to 'sign up', new_user_registration_path %> / <%= link_to 'log in', new_user_session_path %> and go to > My Account > Boost form, to fill in and submit the last details.</p>
+        <p class="card-text "><em>Please note that you need your PayPal transaction reference number which can be found in your transaction history on PayPal and is sent to you by email<em></p>
+      </div>
+    </section>
+  </div><hr/>
+  <div class="row">
+    <div class="col-md-12-lg-3 sign-box">
+      <p class="card-text">Or if you don't want to sign up / log in click here </p>
+      <%= link_to boosts_path do %>
+      <button type="button" class="btn btn-round">Boost form</button>
+      <% end %>
+    </div>
+  </div>
+</div>
