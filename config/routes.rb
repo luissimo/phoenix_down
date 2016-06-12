@@ -11,7 +11,6 @@ Rails.application.routes.draw do
 
 
   root                          'pages#index'
-  get 'boosting'             =>  'pages#boosting'
   get 'boosters'             =>  'pages#boosters'
   get 'faqs'                 =>  'pages#faq'
   get 'faqs_boost'           =>  'pages#faq_about_elo_boost'
@@ -21,13 +20,7 @@ Rails.application.routes.draw do
   get 'faqs_payment'         =>  'pages#faq_payment'
   get 'faqs_safety'          =>  'pages#faq_safety_security'
   get 'elo_boost'            =>  'pages#elo_boost'
-  get 'division-boost'       =>  'pages#division_boost'
-  get 'win-boost'            =>  'pages#win_boost'
-  get 'duo-queue'            =>  'pages#duo_queue'
   get 'success'              =>  'pages#success'
-  get 'placement-matches'    =>  'pages#placement_matches'
-  get 'normal-draft'         =>  'pages#normal_draft'
-  get 'budget-boosting'      =>  'pages#budget_boosting'
   get 'profiles'             =>  'profiles#index'
   get 'profiles/sailor'      =>  'profiles#sailor'
   get 'profiles/efefrompower'=>  'profiles#efefrompower'

@@ -17,6 +17,7 @@ gem 'braintree'
 gem 'dotenv'
 gem 'watir-webdriver'
 gem 'mail_form'
+gem 'sitemap_generator'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
