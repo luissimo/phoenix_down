@@ -4,7 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
-  has_one :booster
 
   def gravatar_url
     hash = Digest::MD5.hexdigest(email)
