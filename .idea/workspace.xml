@@ -2,117 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac12f3b4-673d-424f-a649-998d79e1b834" name="Default" comment="Boost 1.0.1">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/clockpicker/bootstrap-clockpicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/fullcalendar/fullcalendar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/fullcalendar/scheduler.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/ion-range-slider/ion.rangeSlider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/ion-range-slider/ion.rangeSlider.skinHTML5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-contextmenu/font/context-menu-icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-contextmenu/font/context-menu-icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-contextmenu/font/context-menu-icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-contextmenu/font/context-menu-icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-contextmenu/jquery.contextMenu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-contextmenu/jquery.contextMenu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-tag-editor/delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-tag-editor/delete.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jquery-tag-editor/jquery.tag-editor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/elements/player.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/elements/player.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/elements/ribbons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/elements/ribbons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/elements/steps.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/elements/steps.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/activity.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/activity.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/calendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/calendar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/chat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/chat.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/contacts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/contacts.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/dashboard.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/editor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/editor.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/files.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/files.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/gallery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/gallery.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/mail.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/mail.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/messenger.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/messenger.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/prices.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/prices.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/profile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/profile.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/project.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/project.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/ribbons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/ribbons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/tasks.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/tasks.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/blockui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/blockui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/bootstrap-daterangepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/bootstrap-daterangepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/bootstrap-datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/bootstrap-touchspin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/bootstrap-touchspin.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/context_menu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/context_menu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/fileupload-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/fileupload-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/fileupload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/fileupload.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/progress.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/progress.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/tags_editor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/tags_editor.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/typeahead.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/typeahead.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/clockpicker/bootstrap-clockpicker-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/clockpicker/bootstrap-clockpicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/daterangepicker/daterangepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/fullcalendar/fullcalendar-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/fullcalendar/scheduler.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/input-mask/input-mask-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/input-mask/jquery.mask.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/ion-range-slider/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/ion-range-slider/ion.rangeSlider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/jquery-contextmenu/jquery.contextMenu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/jquery-contextmenu/jquery.ui.position.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/jquery-tag-editor/jquery.caret.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/jquery-tag-editor/jquery.tag-editor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/ladda-button/ladda-button-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/ladda-button/ladda.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/ladda-button/ladda.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/ladda-button/spin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/notie/notie-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/notie/notie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/plottable/plottable-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/plottable/plottable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/plottable/svgtypewriter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/pnotify/pnotify-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/pnotify/pnotify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/salvattore/salvattore.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/simplemde/simplemde.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/simplemde/simplemde.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/typeahead/jquery.typeahead.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/typeahead/typeahead-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/confirm-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/confirm-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/confirm-4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/confirm-5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/confirm-6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/confirm-7.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/img/avatar-2-256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/img/star-grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/img/star-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/img/stars.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mail/img/steps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/charts-c3js/c3.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jstree/32px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jstree/40px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jstree/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jstree/style.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/jstree/throbber.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/ladda-button/ladda-themeless.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/lib/typeahead/countries_v2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/error.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/error.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/login.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/others.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/others.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/profile-2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/profile-2.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/user.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/pages/user.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/fancybox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/fancybox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/jscrollpane.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/jscrollpane.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/pnotify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/pnotify.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/sweet-alert-animations.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/separate/vendor/sweet-alert-animations.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/charts-c3js/c3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/charts-c3js/c3js-init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/charts-c3js/d3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/d3/d3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/hide-show-password/bootstrap-show-password-init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/hide-show-password/bootstrap-show-password.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/html-sortable/html.sortable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/jstree/jstree.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/nestable/jquery.nestable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/peity/jquery.peity.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/peity/peity-init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/summernote/summernote.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="boosta2.iws" />
@@ -143,26 +71,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/sitemap.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -645,7 +553,7 @@
       <workItem from="1465212958277" duration="867000" />
       <workItem from="1465213942459" duration="52536000" />
       <workItem from="1465673017230" duration="10316000" />
-      <workItem from="1465900813402" duration="4913000" />
+      <workItem from="1465900813402" duration="5365000" />
     </task>
     <task id="LOCAL-00001" summary="image changed">
       <created>1465485191730</created>
@@ -784,7 +692,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337923000" />
+    <option name="totallyTimeSpent" value="338375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,7 +707,7 @@
     <frame x="0" y="23" width="1440" height="781" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26895565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26895565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.5114449" order="11" side_tool="true" content_ui="tabs" />
@@ -808,7 +716,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587412" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292011" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5160839" sideWeight="0.77610874" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5160839" sideWeight="0.77610874" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -853,15 +761,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/elements.html" />
-    <entry file="file://$PROJECT_DIR$/public/panels.html" />
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
@@ -904,6 +803,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,6 +1115,21 @@
             <marker date="1465904510000" expanded="true" signature="10084:10088" placeholder="..." />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/lib/jstree/throbber.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/lib/jstree/32px.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/lib/jstree/40px.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
