@@ -4,7 +4,6 @@
     <list default="true" id="ac12f3b4-673d-424f-a649-998d79e1b834" name="Default" comment="Boost 1.0.1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mail/confirm-1.html" afterPath="$PROJECT_DIR$/public/mail/confirm-1.html" />
     </list>
     <ignored path="boosta2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,32 +117,9 @@
       <file leaf-file-name="confirmation_instructions.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding>
-                <marker date="1465904510000" expanded="true" signature="1719:1731" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="1732:1749" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="1739:1749" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2267:2279" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2280:2303" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2289:2303" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2693:2755" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2708:2755" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2733:2745" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="2746:2755" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7192:7204" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7205:7294" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7236:7294" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7269:7294" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7772:7900" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7809:7900" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7856:7868" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="7869:7900" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="9785:9797" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="9798:9887" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="9829:9887" placeholder="..." />
-                <marker date="1465904510000" expanded="true" signature="9862:9887" placeholder="..." />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -719,7 +695,7 @@
       <workItem from="1465212958277" duration="867000" />
       <workItem from="1465213942459" duration="52536000" />
       <workItem from="1465673017230" duration="10316000" />
-      <workItem from="1465900813402" duration="3339000" />
+      <workItem from="1465900813402" duration="3741000" />
     </task>
     <task id="LOCAL-00001" summary="image changed">
       <created>1465485191730</created>
@@ -858,7 +834,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336349000" />
+    <option name="totallyTimeSpent" value="336751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1326,32 +1302,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <marker date="1465904510000" expanded="true" signature="1719:1731" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="1732:1749" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="1739:1749" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2267:2279" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2280:2303" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2289:2303" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2693:2755" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2708:2755" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2733:2745" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="2746:2755" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7192:7204" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7205:7294" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7236:7294" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7269:7294" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7772:7900" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7809:7900" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7856:7868" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="7869:7900" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="9785:9797" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="9798:9887" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="9829:9887" placeholder="..." />
-            <marker date="1465904510000" expanded="true" signature="9862:9887" placeholder="..." />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
