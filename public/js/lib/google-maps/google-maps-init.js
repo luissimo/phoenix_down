@@ -27,7 +27,7 @@ function initMap() {
 
     var myOptions = {
         content:
-            "<p><i class='font-icon font-icon-mail'></i>info@elo-boost.io</p>",
+            "<p><i class='font-icon font-icon-mail'></i>support@elo-boost.io</p>",
         disableAutoPan: false,
         maxWidth: 0,
         pixelOffset: new google.maps.Size(-140, 0),
