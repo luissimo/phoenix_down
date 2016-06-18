@@ -23667,7 +23667,8 @@ html {
 
 .statistic-box.riven {
     background-color: #46c35f;
-    background-image: url(../img/statistic-box-riven.png)
+    background-image: url(../img/pentakill.gif);
+    background-size: 100%;
 }
 .statistic-box.rengar {
     background-color: #46c35f;
