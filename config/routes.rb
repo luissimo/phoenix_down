@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get 'faqs_contact'         =>  'pages#faq_contact_booster'
   get 'faqs_payment'         =>  'pages#faq_payment'
   get 'faqs_safety'          =>  'pages#faq_safety_security'
-  get 'elo_boost'            =>  'pages#elo_boost'
+  get 'elo-boost'            =>  'pages#elo_boost'
   get 'success'              =>  'pages#success'
   get 'profiles'             =>  'profiles#index'
   get 'profiles/sailor'      =>  'profiles#sailor'
