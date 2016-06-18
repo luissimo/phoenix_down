@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
 
-  root                          'pages#index'
+  root                           'pages#index'
   get 'boosters'             =>  'pages#boosters'
   get 'faqs'                 =>  'pages#faq'
   get 'faqs-boost'           =>  'pages#faq_about_elo_boost'
