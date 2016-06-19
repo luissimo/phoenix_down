@@ -1,18 +1,18 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://www.elo-boost.io"
+SitemapGenerator::Sitemap.default_host = "https://www.elo-boost.io"
 
 SitemapGenerator::Sitemap.create do
 
  add '/'
  add '/boosters'
  add '/faqs'
- add '/faqs_boost'
- add '/faqs_services'
- add '/faqs_process'
- add '/faqs_contact'
- add '/faqs_payment'
- add '/faqs_safety'
- add '/elo_boost'
+ add '/faqs-boost'
+ add '/faqs-services'
+ add '/faqs-process'
+ add '/faqs-contact'
+ add '/faqs-payment'
+ add '/faqs-safety'
+ add '/elo-boost'
  add '/success'
  add '/profiles'
  add '/profiles/sailor'
