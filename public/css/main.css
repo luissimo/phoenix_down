@@ -5,6 +5,54 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+footer.page-footer .footer-copyright {
+    background-color: grey;
+    border-top: 1px solid black;
+    color: #5FA7E7;
+}
+.light, footer.page-footer .footer-copyright {
+    font-weight: 800;
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    background-color: #5FA7E7;
+}
+footer.page-footer .footer-copyright .footer-text {
+    margin-left: 72px
+}
+
+
+footer.page-footer {
+    margin-top: 0;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 -2px 5px 0 rgba(0,0,0,0.08),0 0 10px 0 rgba(0,0,0,0.05);
+}
+
+footer.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #fff6da;
+}
+
+footer.page-footer .col.l3 {
+    width: 60%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    float: left;
+}
+
+footer.page-footer .col.l4 {
+    width: 60%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
 .bootstrap-select.btn-group .dropdown-menu, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box
