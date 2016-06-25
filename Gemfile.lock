@@ -40,8 +40,6 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    braintree (2.62.0)
-      builder (>= 2.0.0)
     builder (3.2.2)
     byebug (8.2.5)
     childprocess (0.5.9)
@@ -187,7 +185,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  braintree
   byebug
   coffee-rails (~> 4.1.0)
   devise
