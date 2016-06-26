@@ -6,8 +6,11 @@
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 .responsive-image {
-    max-width: 100%
+    max-width: 100%; !important
+    display: inline-block;
+    height: auto
 }
+
 html.no-touch.no-touch {
     overflow: auto !important
 }
