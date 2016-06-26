@@ -6,8 +6,8 @@
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 .responsive-image {
-    max-width: 100%; !important
-    display: inline-block;
+    max-width: 100%;
+    display: block;
     height: auto
 }
 
