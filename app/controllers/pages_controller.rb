@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
 
-
   def index
   end
 
@@ -8,6 +7,9 @@ class PagesController < ApplicationController
   end
 
   def boosters
+  end
+
+  def lol
   end
 
   def faq

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   root                           'pages#index'
   get 'boosters'             =>  'pages#boosters'
+  get 'lol'                  =>  'pages#lol'
   get 'faqs'                 =>  'pages#faq'
   get 'faqs-boost'           =>  'pages#faq_about_elo_boost'
   get 'faqs-services'        =>  'pages#faq_about_our_services'

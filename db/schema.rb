@@ -11,32 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160608130727) do
-
-  create_table "boosters", force: :cascade do |t|
-    t.string   "name"
-    t.string   "rank"
-    t.string   "server"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "contact_forms", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "contacts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "likes", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "booster_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20160513101810) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
