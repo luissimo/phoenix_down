@@ -35,8 +35,8 @@
                     <div class="col-md-5">
                       <div class="row">
                         <div class="form-group float-left">
-                          <label class="label label-success">Choose your current division</label>
-                          <img src="/img/bronze_v.png" id="div_image_change" height="180" width="180">
+                          <label class="label label-success center-block">Choose your current division</label>
+                          <%= image_tag('/img/bronze_v.png', width: '100%', id: 'div_image_change', alt: 'League of Legends ELO rank boosting') %>
                           <select class="select2" id="current_division_div" onchange="divCalculate(document.getElementById('desired_division_div').value); document.getElementById('div_image_change').src = divUrlMap[this.value];">
                            <option value="0">Choose division</option>
                             <optgroup label="Bronze division">
@@ -89,9 +89,9 @@
                       <div class="form-group">
                         <div class="col-md-5 float-right">
                           <div class="row">
-                            <label class="label label-success">Choose your desired division</label>
-                            <img src="/img/challenger.png" id="div_image_change_2" height="180" width="180">
-                            <select class="select2" id="desired_division_div" onchange="divCalculate(this.value); document.getElementById('div_image_change_2').src = divUrlMap[this.value];" autofocus>
+                            <label class="label label-success center-block">Choose your desired division</label>
+                            <%= image_tag('/img/challenger.png', width: '95%', id: 'div_image_change_2', alt: 'League of Legends ELO division boosting') %>
+                            <select class="select2 center-block" id="desired_division_div" onchange="divCalculate(this.value); document.getElementById('div_image_change_2').src = divUrlMap[this.value];" autofocus>
                              <option value="0">Choose division</option>
                               <optgroup label="Challenger division">
                                 <option value="4999">Challenger</option>
@@ -146,8 +146,8 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="label label-success">Choose your current division</label>
-                          <img src="/img/bronze_v.png" id="win_image_change" height="180" width="180">
+                          <label class="label label-success center-block">Choose your current division</label>
+                          <%= image_tag('/img/bronze_v.png', width: '76.5%', id: 'win_image_change', class: 'win_image_change center-block', alt: 'League of Legends ELO win boosting') %>
                           <select class="select2" id="current_division_win" onchange="winCalculate(document.getElementById('demo3').value); document.getElementById('win_image_change').src = winUrlMap[this.value];" >
                            <option value="0">Choose division</option>
                             <optgroup label="Bronze division">
@@ -197,7 +197,7 @@
 
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="label label-success"> How many wins would you like?</label><br/><br/>
+                          <label class="label label-success center-block"> How many wins would you like?</label><br/><br/>
                           <div class="col-md-8 text-center"><br/><br/>
                             <h1 id="amount_of_wins" > 0 </h1><br/><br/>
                           </div>

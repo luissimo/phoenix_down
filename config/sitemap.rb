@@ -5,6 +5,7 @@ SitemapGenerator::Sitemap.create do
 
  add '/'
  add '/boosters'
+ add '/lol'
  add '/faqs'
  add '/faqs-boost'
  add '/faqs-services'
