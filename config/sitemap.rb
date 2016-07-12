@@ -24,5 +24,6 @@ SitemapGenerator::Sitemap.create do
  add '/profiles/sinterklaas'
  add '/profiles/verstappen'
  add '/profiles/wessex'
+ add '/privacy-policy'
 
 end

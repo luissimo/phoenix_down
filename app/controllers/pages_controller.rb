@@ -39,4 +39,7 @@ class PagesController < ApplicationController
   def success
   end
 
+  def privacy_policy
+  end
+
 end

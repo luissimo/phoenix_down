@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'faqs-safety'          =>  'pages#faq_safety_security'
   get 'elo-boost'            =>  'pages#elo_boost'
   get 'success'              =>  'pages#success'
+  get 'privacy-policy'       =>  'pages#privacy_policy'
   get 'profiles'             =>  'profiles#index'
   get 'profiles/sailor'      =>  'profiles#sailor'
   get 'profiles/efefrompower'=>  'profiles#efefrompower'
