@@ -74,12 +74,6 @@
                               <option value="940.8">Diamond II</option>
                               <option value="1130.8">Diamond I</option>
                             </optgroup>
-                            <optgroup label="Master division">
-                              <option value="1630.8">Master</option>
-                            </optgroup>
-                            <optgroup label="Challenger division">
-                              <option value="4999">Challenger</option>
-                            </optgroup>
                           </select>
                         </div> <!-- end form group -->
                       </div>
@@ -90,14 +84,11 @@
                         <div class="col-md-5 float-right">
                           <div class="row">
                             <label class="label label-success center-block">Choose your desired division</label>
-                            <%= image_tag('/img/challenger.png', width: '95%', id: 'div_image_change_2', alt: 'League of Legends ELO division boosting') %>
+                            <%= image_tag('/img/master.png', width: '95%', id: 'div_image_change_2', alt: 'League of Legends ELO division boosting') %>
                             <select class="select2 center-block" id="desired_division_div" onchange="divCalculate(this.value); document.getElementById('div_image_change_2').src = divUrlMap[this.value];" autofocus>
                              <option value="0">Choose division</option>
-                              <optgroup label="Challenger division">
-                                <option value="4999">Challenger</option>
-                              </optgroup>
                               <optgroup label="Master division">
-                                <option value="1630.8">Master</option>
+                                <option value="1423.8">Master</option>
                               </optgroup>
                               <optgroup label="Diamond division">
                                 <option value="1130.8">Diamond I</option>
@@ -187,9 +178,6 @@
                             </optgroup>
                             <optgroup label="Master division">
                               <option value="0.7">Master</option>
-                            </optgroup>
-                            <optgroup label="Challenger division">
-                              <option value="0.5">Challenger</option>
                             </optgroup>
                           </select>
                         </div>
@@ -473,8 +461,7 @@
     "807.8"     : "/img/diamond_iii.png",
     "940.8"     : "/img/diamond_ii.png",
     "1130.8"    : "/img/diamond_i.png",
-    "1630.8"    : "/img/master.png",
-    "4999"      : "/img/challenger.png"
+    "1423.8"    : "/img/master.png"
   };
 </script>
 <script>
@@ -504,8 +491,7 @@
       "1.3"    : "/img/diamond_iii.png",
       "1.1"    : "/img/diamond_ii.png",
       "0.9"    : "/img/diamond_i.png",
-      "0.7"    : "/img/master.png",
-      "0.5"    : "/img/challenger.png"
+      "0.7"    : "/img/master.png"
     };
 </script>
 <script>
@@ -545,8 +531,7 @@
     'img/diamond_iii.png',
     'img/diamond_ii.png',
     'img/diamond_i.png',
-    'img/master.png',
-    'img/challenger.png'
+    'img/master.png'
   ]);
 </script>
 
