@@ -32,7 +32,7 @@
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane fade in active" id="tabs-2-tab-1">
                     <h5 class="with-border m-t-0">Division boost</h5>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                       <div class="row">
                         <div class="form-group float-left">
                           <label class="label label-success center-block">Choose your current division</label>
@@ -80,11 +80,10 @@
                     </div>
 
                     <div class="row">
-                      <div class="form-group">
-                        <div class="col-md-5 float-right">
-                          <div class="row">
+                       <div class="form-group">
+                         <div class="col-md-6 float-right">
                             <label class="label label-success center-block">Choose your desired division</label>
-                            <%= image_tag('/img/master.png', width: '95%', id: 'div_image_change_2', alt: 'League of Legends ELO division boosting') %>
+                            <%= image_tag('/img/master.png', width: '97%', id: 'div_image_change_2', alt: 'League of Legends ELO division boosting') %><br/><br/>
                             <select class="select2 center-block" id="desired_division_div" onchange="divCalculate(this.value); document.getElementById('div_image_change_2').src = divUrlMap[this.value];" autofocus>
                              <option value="0">Choose division</option>
                               <optgroup label="Master division">
@@ -126,10 +125,9 @@
                                 <option value="0">Bronze V</option>
                               </optgroup>
                             </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                         </div>
+                       </div>
+                     </div>
                   </div><!--.tab-pane-->
 
                   <div role="tabpanel" class="tab-pane fade" id="tabs-2-tab-2">
@@ -491,7 +489,8 @@
       "1.3"    : "/img/diamond_iii.png",
       "1.1"    : "/img/diamond_ii.png",
       "0.9"    : "/img/diamond_i.png",
-      "0.7"    : "/img/master.png"
+      "0.7"    : "/img/master.png",
+      "0"      : "/img/bronze_v.png"
     };
 </script>
 <script>
@@ -549,13 +548,13 @@
     var division_value = $('select[id=current_division_win]').val();
     var division_text = $("#current_division_win option:selected").html();
     cost_eur.innerHTML = "€"+((wins * 16) / division_value).toFixed(2);
-    cost_usd.innerHTML = "$"+(((wins * 16) / division_value) * 1.13 ).toFixed(2);
+    cost_usd.innerHTML = "$"+(((wins * 16) / division_value) * 1.10 ).toFixed(2);
     amount_of_wins.innerHTML = wins;
     product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Win boost";
     product1.innerHTML = "<strong class='bg-info'>Current rank</strong> " + division_text;
     product2.innerHTML = "<strong class='bg-info'>wins</strong> " + wins  ;
 
-    document.getElementById('total_cost_eur').value = (((wins * 16) / division_value) * 1.13 ).toFixed(2);
+    document.getElementById('total_cost_eur').value = (((wins * 16) / division_value) * 1.10 ).toFixed(2);
     document.getElementById('product_name').value = "Win Boost: " + division_text + " > " + wins + " wins";
   }
 
@@ -565,10 +564,10 @@
     console.log(typeof budget_amount);
     budget = parseFloat(budget_amount);
     cost_eur.innerHTML = "€"+(budget).toFixed(2);
-    cost_usd.innerHTML = "$"+(budget * 1.13 ).toFixed(2);
+    cost_usd.innerHTML = "$"+(budget * 1.10 ).toFixed(2);
     product_type.innerHTML = "<strong class='bg-info'>Boost type:</strong> Budget boost";
     product1.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> €" + (budget).toFixed(2);
-    product2.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> $" + (budget * 1.13).toFixed(2);
+    product2.innerHTML = "<strong class='bg-info'>Chosen budget:</strong> $" + (budget * 1.10).toFixed(2);
     return budget;
   }
 */
@@ -594,7 +593,7 @@
     if(currencyType == 'euro') {
       totalAmt = (desired_division - current_division).toFixed(2);
     } else if(currencyType == 'usd') {
-      totalAmt = ((desired_division - current_division) * 1.13 ).toFixed(2);
+      totalAmt = ((desired_division - current_division) * 1.10 ).toFixed(2);
     }
     if(totalAmt != undefined && totalAmt < 10)
       totalAmt = 0;
